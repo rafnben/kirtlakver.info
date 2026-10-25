@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Innkirtlaleikurinn</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0f7f86">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Innkirtlar">
+<style>
+:root{--bg:#f4f7fa;--card:#fff;--ink:#14213d;--mute:#5b677d;--line:#d9e1ea;--acc:#0f7f86;--accink:#fff;--ok:#1f8a4c;--okbg:#e3f4ea;--no:#c23a52;--nobg:#fbe9ed;--sel:#e1f3f4}
+@media (prefers-color-scheme:dark){:root{--bg:#101826;--card:#182235;--ink:#e8eef8;--mute:#9aa8c0;--line:#2a3750;--acc:#3cc3c9;--accink:#08202a;--ok:#5fd18b;--okbg:#17352a;--no:#ff8a9d;--nobg:#3a1f29;--sel:#1b3a47}}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:17px/1.5 "Avenir Next","Segoe UI",system-ui,sans-serif;padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) env(safe-area-inset-bottom,0) env(safe-area-inset-left,0)}
+main{max-width:660px;margin:0 auto;padding:18px 16px 48px}
+h1{font-size:2rem;line-height:1.15;margin:8px 0;letter-spacing:-.02em}
+h2{margin:0 0 14px;font-size:1.2rem;line-height:1.4}
+p{margin:0 0 14px;color:var(--mute)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:14px}
+button{font:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.btn{background:var(--acc);color:var(--accink);border:0;border-radius:10px;padding:12px 20px;font-weight:600}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.top{display:flex;justify-content:space-between;gap:12px;font-size:.95rem;color:var(--mute);margin-bottom:8px}
+.top b{color:var(--ink)}
+.track{height:8px;background:var(--line);border-radius:8px;overflow:hidden;margin-bottom:16px}
+#bar{height:100%;width:0;background:var(--acc);transition:width .3s}
+#cat{font-size:.9rem;color:var(--acc);font-weight:600;margin-bottom:6px}
+#hint{font-size:.9rem;color:var(--mute);margin:-6px 0 12px}
+.opt{display:flex;gap:10px;width:100%;text-align:left;background:var(--card);color:var(--ink);border:2px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px}
+.opt i{flex:none;width:1.6em;font-style:normal;font-weight:700;color:var(--mute)}
+.opt:hover:not(:disabled){border-color:var(--acc)}
+.opt.sel{border-color:var(--acc);background:var(--sel)}
+.opt:disabled{cursor:default;color:var(--ink)}
+.opt.right{border-color:var(--ok);background:var(--okbg)}
+.opt.wrong{border-color:var(--no);background:var(--nobg)}
+.opt.miss{border-color:var(--ok);border-style:dashed}
+#fb{border-radius:10px;padding:12px 14px;margin:6px 0 14px;border-left:5px solid}
+#fb.ok{background:var(--okbg);border-color:var(--ok)}#fb.no{background:var(--nobg);border-color:var(--no)}
+#fb strong{display:block;margin-bottom:2px}
+.big{font-size:2.4rem;font-weight:700;margin:4px 0}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+label.chk{display:flex;gap:10px;align-items:center;padding:6px 0}
+label.chk input{width:20px;height:20px;accent-color:var(--acc)}
+select{font:inherit;padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.small{font-size:.9rem;color:var(--mute)}
+a{color:var(--acc)}
+@media (prefers-reduced-motion:reduce){#bar{transition:none}}
+</style>
+</head>
+<body>
+<main>
+<section id="intro" class="card">
+<h1 id="title">Innkirtlaleikurinn</h1>
+<p>Ein spurning í einu, strax endurgjöf og engin tímapressa. Sums staðar eru fleiri en eitt rétt svar.</p>
+<div id="cats"></div>
+<p style="margin-top:12px">Fjöldi spurninga: <select id="cnt"><option value="10">10</option><option value="20">20</option><option value="0">Allar</option></select></p>
+<div class="row"><button class="btn" id="go">Byrja</button></div>
+<p class="small" id="note" hidden>Prufuútgáfa af spurningum er í notkun. <a href="#" id="clr">Hreinsa</a></p>
+</section>
+
+<section id="play" hidden>
+<div class="top"><span>Spurning <b id="n"></b></span><span>Stig <b id="s">0</b></span><span>Rák <b id="k">0</b></span></div>
+<div class="track"><div id="bar"></div></div>
+<div class="card">
+<div id="cat"></div>
+<h2 id="q"></h2>
+<div id="hint" hidden>Veldu öll rétt svör og ýttu á „Svara“.</div>
+<div id="opts"></div>
+<div id="fb" hidden></div>
+<div class="row">
+<button class="btn" id="ans" hidden>Svara</button>
+<button class="btn" id="nx" hidden>Næsta spurning</button>
+</div>
+</div>
+</section>
+
+<section id="end" class="card" hidden>
+<h1>Niðurstaða</h1>
+<div class="big" id="res"></div>
+<p id="msg"></p>
+<div class="row">
+<button class="btn" id="again">Spila aftur</button>
+<button class="btn alt" id="redo" hidden>Æfa það sem ég missti</button>
+<button class="btn alt" id="home">Velja efni</button>
+</div>
+</section>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const show=id=>["intro","play","end"].forEach(x=>$("#"+x).hidden=x!==id);
+const L="ABCDEFGH";
+let ALL=[],list,i,score,streak,missed,locked,picked,lastSet;
+
+async function load(){
+ let d,own=null;
+ try{own=localStorage.getItem("ik_preview")}catch(e){}
+ if(own){try{d=JSON.parse(own);$("#note").hidden=false}catch(e){}}
+ if(!d){const r=await fetch("questions.json",{cache:"no-cache"});d=await r.json()}
+ ALL=d.questions;if(d.title){$("#title").textContent=d.title;document.title=d.title}
+ const cats=[...new Set(ALL.map(x=>x.c))];
+ const box=$("#cats");box.innerHTML="";
+ cats.forEach(c=>{const l=document.createElement("label");l.className="chk";const k=document.createElement("input");k.type="checkbox";k.checked=true;k.value=c;l.append(k,c+" ("+ALL.filter(x=>x.c===c).length+")");box.appendChild(l)});
+}
+function pool(){const on=[...document.querySelectorAll("#cats input:checked")].map(x=>x.value);return ALL.filter(x=>on.includes(x.c))}
+function shuffle(a){a=[...a];for(let j=a.length-1;j>0;j--){const k=Math.floor(Math.random()*(j+1));[a[j],a[k]]=[a[k],a[j]]}return a}
+function start(set,n){
+ lastSet=set;list=shuffle(set);if(n)list=list.slice(0,n);
+ if(!list.length){alert("Veldu að minnsta kosti eitt efni.");return}
+ i=0;score=0;streak=0;missed=[];show("play");render();
+}
+function norm(x){
+ if(x.rr)return{o:["Rétt","Rangt"],a:[x.rr==="rétt"?0:1],multi:false};
+ if(x.open!==undefined)return{open:true};
+ return{o:x.o,a:x.a,multi:x.a.length>1};
+}
+function render(){
+ locked=false;picked=new Set();const x=list[i],m=norm(x);
+ $("#cat").textContent=x.c;$("#q").textContent=x.q;
+ $("#n").textContent=(i+1)+" / "+list.length;
+ $("#bar").style.width=(i/list.length*100)+"%";
+ $("#s").textContent=score;$("#k").textContent=streak;
+ $("#fb").hidden=true;$("#nx").hidden=true;$("#ans").hidden=true;
+ $("#hint").hidden=!m.multi;
+ const o=$("#opts");o.innerHTML="";
+ if(m.open){const b=document.createElement("button");b.className="btn alt";b.textContent="Sýna svar";b.onclick=()=>reveal(x);o.appendChild(b);return}
+ m.o.forEach((t,j)=>{const b=document.createElement("button");b.className="opt";
+  if(!x.rr){const s=document.createElement("i");s.textContent=L[j];b.append(s)}
+  b.append(t);b.onclick=()=>click(j,b,m);o.appendChild(b)});
+ if(m.multi){$("#ans").hidden=false;$("#ans").onclick=()=>grade(m)}
+}
+function click(j,b,m){
+ if(locked)return;
+ if(!m.multi){picked=new Set([j]);grade(m);return}
+ if(picked.has(j)){picked.delete(j);b.classList.remove("sel")}else{picked.add(j);b.classList.add("sel")}
+}
+function grade(m){
+ if(locked)return;if(m.multi&&!picked.size){return}
+ locked=true;const x=list[i];
+ const ok=picked.size===m.a.length&&m.a.every(k=>picked.has(k));
+ document.querySelectorAll(".opt").forEach((b,k)=>{b.disabled=true;b.classList.remove("sel");
+  const right=m.a.includes(k),p=picked.has(k);
+  if(right&&p)b.classList.add("right");else if(p)b.classList.add("wrong");else if(right)b.classList.add("miss")});
+ $("#ans").hidden=true;$("#hint").hidden=true;
+ result(ok,x.w,m.multi&&!ok?"Rétt svör eru merkt græn (strikuð ef þú misstir af þeim).":"");
+}
+function reveal(x){
+ locked=true;$("#opts").innerHTML="";
+ const fb=$("#fb");fb.className="ok";fb.hidden=false;fb.innerHTML="";
+ const s=document.createElement("strong");s.textContent="Svar";fb.append(s,x.open);
+ const r=$("#opts");
+ const a=document.createElement("button");a.className="btn";a.textContent="Vissi þetta";a.onclick=()=>{done(true)};
+ const b=document.createElement("button");b.className="btn alt";b.textContent="Ekki alveg";b.onclick=()=>{done(false)};
+ const row=document.createElement("div");row.className="row";row.append(a,b);r.appendChild(row);
+ function done(ok){r.innerHTML="";fb.hidden=true;result(ok,x.w||"",x.open,true)}
+}
+function result(ok,why,extra,isOpen){
+ const praise=["Rétt!","Flott!","Vel gert!","Einmitt!"];
+ if(ok){streak++;score+=10+Math.min(streak-1,5)*2}else{streak=0;missed.push(list[i])}
+ const fb=$("#fb");fb.className=ok?"ok":"no";fb.hidden=false;fb.innerHTML="";
+ const s=document.createElement("strong");s.textContent=ok?praise[Math.floor(Math.random()*praise.length)]:"Ekki alveg.";
+ fb.append(s);
+ if(isOpen){fb.append(extra);if(why)fb.append(" "+why)}else{if(extra)fb.append(extra+" ");if(why)fb.append(why)}
+ $("#s").textContent=score;$("#k").textContent=streak;
+ const nx=$("#nx");nx.hidden=false;nx.textContent=i+1<list.length?"Næsta spurning":"Sjá niðurstöðu";nx.focus();
+}
+function finish(){
+ show("end");const t=list.length,r=t-missed.length,p=r/t;
+ $("#res").textContent=r+" af "+t+" · "+score+" stig";
+ $("#msg").textContent=p===1?"Fullt hús. Frábært!":p>=.7?"Mjög gott. Þú ert vel inni í efninu.":p>=.4?"Ágætis byrjun. Prófaðu aftur og sjáðu hvað situr eftir.":"Þetta kemur. Farðu yfir skýringarnar og reyndu aftur.";
+ $("#redo").hidden=!missed.length;
+}
+$("#go").onclick=()=>start(pool(),+$("#cnt").value);
+$("#again").onclick=()=>start(lastSet,list.length);
+$("#redo").onclick=()=>start(missed,0);
+$("#home").onclick=()=>show("intro");
+$("#nx").onclick=()=>{i++;i<list.length?render():finish()};
+$("#clr").onclick=e=>{e.preventDefault();try{localStorage.removeItem("ik_preview")}catch(x){}location.reload()};
+load().catch(()=>{$("#intro").insertAdjacentHTML("beforeend","<p>Ekki tókst að hlaða spurningum. Opnaðu síðuna í gegnum vefþjón (ekki sem skrá).</p>")});
+if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
+</script>
+</body>
+</html>

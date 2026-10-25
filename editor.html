@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ritill – Innkirtlaleikurinn</title>
+<style>
+:root{--bg:#f4f7fa;--card:#fff;--ink:#14213d;--mute:#5b677d;--line:#d9e1ea;--acc:#0f7f86;--accink:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#101826;--card:#182235;--ink:#e8eef8;--mute:#9aa8c0;--line:#2a3750;--acc:#3cc3c9;--accink:#08202a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 "Avenir Next","Segoe UI",system-ui,sans-serif}
+main{max-width:860px;margin:0 auto;padding:16px}
+header{position:sticky;top:0;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);z-index:2;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+h1{font-size:1.3rem;margin:0 auto 0 0}
+button,select,input,textarea{font:inherit;color:var(--ink)}
+button{cursor:pointer;background:var(--acc);color:var(--accink);border:0;border-radius:8px;padding:8px 14px;font-weight:600}
+button.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:14px 0}
+.q label{display:block;font-size:.85rem;color:var(--mute);margin-top:8px}
+.q input,.q textarea,.q select{width:100%;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+.q textarea{min-height:64px}
+.bar{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.hd{display:flex;justify-content:space-between;color:var(--mute);font-size:.9rem}
+.help{color:var(--mute);font-size:.9rem}
+input[type=search]{max-width:220px}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Ritill spurninga</h1>
+<input type="search" id="find" placeholder="Leita…" style="padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--card)">
+<button class="alt" id="add">+ Ný spurning</button>
+<button class="alt" id="load">Opna skrá</button>
+<button class="alt" id="try">Prófa í appinu</button>
+<button id="save">Vista questions.json</button>
+<input type="file" id="file" accept=".json" hidden>
+</header>
+<p class="help">Gerðir: <b>Rétt/Rangt</b>, <b>Fjölval</b> (merktu rétt svör með * fremst í línu; eitt * = eitt rétt svar, fleiri = fleiri rétt svör) og <b>Opin</b> (svar sýnt eftir smell). „Vista“ sækir skrána sem þú setur svo á vefsvæðið í stað questions.json.</p>
+<div id="list"></div>
+</main>
+<script>
+let D={title:"Innkirtlaleikurinn",questions:[]};
+const $=s=>document.querySelector(s);
+const type=x=>x.rr?"rr":x.open!==undefined?"open":"mc";
+function el(h){const t=document.createElement("template");t.innerHTML=h.trim();return t.content.firstChild}
+function esc(s){return String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;")}
+function card(x,n){
+ const t=type(x),opts=t==="mc"?x.o.map((o,j)=>(x.a.includes(j)?"*":"")+o).join("\n"):"";
+ const c=el(`<div class="q" data-i="${n}">
+ <div class="hd"><span>#${n+1}</span><span class="bar" style="margin:0"><button class="alt up">↑</button><button class="alt dn">↓</button><button class="alt del">Eyða</button></span></div>
+ <label>Efni</label><input class="c" list="cl" value="${esc(x.c)}">
+ <label>Gerð</label><select class="t"><option value="rr">Rétt/Rangt</option><option value="mc">Fjölval</option><option value="open">Opin</option></select>
+ <label>Spurning</label><textarea class="q1">${esc(x.q)}</textarea>
+ <div class="rr"><label>Rétt svar</label><select class="r"><option value="rétt">Rétt</option><option value="rangt">Rangt</option></select></div>
+ <div class="mc"><label>Valkostir (einn í línu, * fremst = rétt)</label><textarea class="o">${esc(opts)}</textarea></div>
+ <div class="op"><label>Svar (opin spurning)</label><textarea class="oa">${esc(x.open)}</textarea></div>
+ <label>Skýring (valfrjálst)</label><textarea class="w">${esc(x.w)}</textarea></div>`);
+ c.querySelector(".t").value=t;if(x.rr)c.querySelector(".r").value=x.rr;
+ const sync=()=>{const v=c.querySelector(".t").value;c.querySelector(".rr").hidden=v!=="rr";c.querySelector(".mc").hidden=v!=="mc";c.querySelector(".op").hidden=v!=="open"};
+ c.querySelector(".t").onchange=sync;sync();
+ c.querySelector(".del").onclick=()=>{if(confirm("Eyða spurningu #"+(n+1)+"?")){collect();D.questions.splice(n,1);render()}};
+ c.querySelector(".up").onclick=()=>move(n,-1);c.querySelector(".dn").onclick=()=>move(n,1);
+ return c;
+}
+function move(n,d){collect();const m=n+d;if(m<0||m>=D.questions.length)return;const q=D.questions;[q[n],q[m]]=[q[m],q[n]];render()}
+function collect(){
+ D.questions=[...document.querySelectorAll(".q")].map(c=>{
+  const v=c.querySelector(".t").value,o={c:c.querySelector(".c").value.trim(),q:c.querySelector(".q1").value.trim()};
+  if(v==="rr")o.rr=c.querySelector(".r").value;
+  else if(v==="open")o.open=c.querySelector(".oa").value.trim();
+  else{const lines=c.querySelector(".o").value.split("\n").map(s=>s.trim()).filter(Boolean);o.o=lines.map(s=>s.replace(/^\*/,"").trim());o.a=lines.map((s,j)=>s.startsWith("*")?j:-1).filter(j=>j>=0)}
+  const w=c.querySelector(".w").value.trim();if(w)o.w=w;return o});
+}
+function render(){
+ const L=$("#list");L.innerHTML="";
+ const dl=el('<datalist id="cl"></datalist>');[...new Set(D.questions.map(x=>x.c))].forEach(c=>dl.appendChild(el(`<option value="${esc(c)}">`)));L.appendChild(dl);
+ D.questions.forEach((x,n)=>L.appendChild(card(x,n)));filter();
+}
+function filter(){const f=$("#find").value.toLowerCase();document.querySelectorAll(".q").forEach(c=>{c.hidden=f&&!c.textContent.toLowerCase().includes(f)&&![...c.querySelectorAll("input,textarea")].some(e=>e.value.toLowerCase().includes(f))})}
+function problems(){
+ const bad=[];D.questions.forEach((q,n)=>{if(!q.q)bad.push("#"+(n+1)+": spurning vantar");if(q.o&&(q.o.length<2||!q.a.length))bad.push("#"+(n+1)+": þarf a.m.k. 2 valkosti og eitt rétt svar (*)")});return bad;
+}
+$("#add").onclick=()=>{collect();D.questions.push({c:D.questions.at(-1)?.c||"",q:"",rr:"rétt"});render();window.scrollTo(0,document.body.scrollHeight)};
+$("#find").oninput=filter;
+$("#save").onclick=()=>{collect();const b=problems();if(b.length&&!confirm("Athugasemdir:\n"+b.join("\n")+"\n\nVista samt?"))return;
+ const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(D,null,1)],{type:"application/json"}));a.download="questions.json";a.click()};
+$("#try").onclick=()=>{collect();const b=problems();if(b.length){alert(b.join("\n"));return}try{localStorage.setItem("ik_preview",JSON.stringify(D))}catch(e){alert("Ekki tókst að vista prufuútgáfu.");return}window.open("index.html","_blank")};
+$("#load").onclick=()=>$("#file").click();
+$("#file").onchange=e=>{const f=e.target.files[0];if(!f)return;f.text().then(t=>{D=JSON.parse(t);render()}).catch(()=>alert("Ógild JSON skrá"))};
+(async()=>{try{const p=localStorage.getItem("ik_preview");if(p&&confirm("Opna síðustu prufuútgáfu úr vafranum? (Cancel = sækja questions.json)")){D=JSON.parse(p);render();return}}catch(e){}
+ try{D=await (await fetch("questions.json",{cache:"no-cache"})).json()}catch(e){}render()})();
+</script>
+</body>
+</html>
