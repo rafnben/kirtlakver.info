@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ritill – Innkirtlaleikurinn</title>
+<title>Ritill – Kirtlakver</title>
 <style>
 :root{--bg:#f4f7fa;--card:#fff;--ink:#14213d;--mute:#5b677d;--line:#d9e1ea;--acc:#0f7f86;--accink:#fff}
 @media (prefers-color-scheme:dark){:root{--bg:#101826;--card:#182235;--ink:#e8eef8;--mute:#9aa8c0;--line:#2a3750;--acc:#3cc3c9;--accink:#08202a}}
@@ -35,11 +35,11 @@ input[type=search]{max-width:220px}
 <button id="save">Vista questions.json</button>
 <input type="file" id="file" accept=".json" hidden>
 </header>
-<p class="help">Gerðir: <b>Rétt/Rangt</b>, <b>Fjölval</b> (merktu rétt svör með * fremst í línu; eitt * = eitt rétt svar, fleiri = fleiri rétt svör) og <b>Opin</b> (svar sýnt eftir smell). „Vista“ sækir skrána sem þú setur svo á vefsvæðið í stað questions.json.</p>
+<p class="help">Gerðir: <b>Rétt/Rangt</b>, <b>Fjölval</b> (merktu rétt svör með * fremst í línu; eitt * = eitt rétt svar, fleiri = fleiri rétt svör) og <b>Opin</b> (svar sýnt eftir smell). Myndir, tenglar og röð (img, wimg, lk, ord, grp) varðveitast sjálfkrafa en eru breytt í JSON-skránni sjálfri. „Vista“ sækir skrána sem þú setur svo á vefsvæðið í stað questions.json.</p>
 <div id="list"></div>
 </main>
 <script>
-let D={title:"Innkirtlaleikurinn",questions:[]};
+let D={title:"Kirtlakver",questions:[]};
 const $=s=>document.querySelector(s);
 const type=x=>x.rr?"rr":x.open!==undefined?"open":"mc";
 function el(h){const t=document.createElement("template");t.innerHTML=h.trim();return t.content.firstChild}
@@ -69,7 +69,8 @@ function collect(){
   if(v==="rr")o.rr=c.querySelector(".r").value;
   else if(v==="open")o.open=c.querySelector(".oa").value.trim();
   else{const lines=c.querySelector(".o").value.split("\n").map(s=>s.trim()).filter(Boolean);o.o=lines.map(s=>s.replace(/^\*/,"").trim());o.a=lines.map((s,j)=>s.startsWith("*")?j:-1).filter(j=>j>=0)}
-  const w=c.querySelector(".w").value.trim();if(w)o.w=w;return o});
+  const w=c.querySelector(".w").value.trim();if(w)o.w=w;
+  const base=D.questions[+c.dataset.i]||{};["img","wimg","lk","ord","grp"].forEach(k=>{if(base[k]!==undefined)o[k]=base[k]});return o});
 }
 function render(){
  const L=$("#list");L.innerHTML="";
@@ -84,10 +85,10 @@ $("#add").onclick=()=>{collect();D.questions.push({c:D.questions.at(-1)?.c||"",q
 $("#find").oninput=filter;
 $("#save").onclick=()=>{collect();const b=problems();if(b.length&&!confirm("Athugasemdir:\n"+b.join("\n")+"\n\nVista samt?"))return;
  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(D,null,1)],{type:"application/json"}));a.download="questions.json";a.click()};
-$("#try").onclick=()=>{collect();const b=problems();if(b.length){alert(b.join("\n"));return}try{localStorage.setItem("ik_preview",JSON.stringify(D))}catch(e){alert("Ekki tókst að vista prufuútgáfu.");return}window.open("index.html","_blank")};
+$("#try").onclick=()=>{collect();const b=problems();if(b.length){alert(b.join("\n"));return}try{localStorage.setItem("kv_preview",JSON.stringify(D))}catch(e){alert("Ekki tókst að vista prufuútgáfu.");return}window.open("index.html","_blank")};
 $("#load").onclick=()=>$("#file").click();
 $("#file").onchange=e=>{const f=e.target.files[0];if(!f)return;f.text().then(t=>{D=JSON.parse(t);render()}).catch(()=>alert("Ógild JSON skrá"))};
-(async()=>{try{const p=localStorage.getItem("ik_preview");if(p&&confirm("Opna síðustu prufuútgáfu úr vafranum? (Cancel = sækja questions.json)")){D=JSON.parse(p);render();return}}catch(e){}
+(async()=>{try{const p=localStorage.getItem("kv_preview");if(p&&confirm("Opna síðustu prufuútgáfu úr vafranum? (Cancel = sækja questions.json)")){D=JSON.parse(p);render();return}}catch(e){}
  try{D=await (await fetch("questions.json",{cache:"no-cache"})).json()}catch(e){}render()})();
 </script>
 </body>
