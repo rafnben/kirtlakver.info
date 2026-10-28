@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kirtlakver</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3PZZRLVMJC"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-3PZZRLVMJC');</script>
+<meta name="robots" content="noindex, nofollow">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -50,7 +53,7 @@ a{color:var(--acc)}
 #scroll{flex:1;overflow-y:auto;overflow-x:hidden;min-height:0;font-size:calc(1rem*var(--s));-webkit-overflow-scrolling:touch;padding-bottom:70px}
 #scroll .card{padding:calc(14px*var(--s)) calc(16px*var(--s));margin-bottom:8px}
 #cat{font-size:.82em;color:var(--acc);font-weight:600;margin-bottom:4px}
-#q{font-size:1.08em;font-weight:600;line-height:1.3;margin:0 0 10px;overflow-wrap:anywhere}
+#q{white-space:pre-line;font-size:1.08em;font-weight:600;line-height:1.3;margin:0 0 10px;overflow-wrap:anywhere}
 #hint{font-size:.85em;color:var(--mute);margin:-4px 0 8px}
 .opt{display:flex;gap:9px;width:100%;text-align:left;background:var(--card);color:var(--ink);border:2px solid var(--line);border-radius:10px;padding:.55em .75em;margin-bottom:.45em;line-height:1.28;overflow-wrap:anywhere}
 .opt i{flex:none;width:1.4em;font-style:normal;font-weight:700;color:var(--mute)}
@@ -79,6 +82,8 @@ a{color:var(--acc)}
 .modal .box{background:var(--card);color:var(--ink);border-radius:14px;padding:20px;max-width:460px;width:100%;max-height:90dvh;overflow:auto}
 .modal .box p{color:var(--ink)}
 .modal h2{margin-bottom:10px}
+#mabout .box{max-width:580px}
+#mabout p{font-size:.95rem}
 .modal .col{display:flex;flex-direction:column;gap:10px;margin-top:12px}
 #lb{padding:0;background:#05080f;flex-direction:column;align-items:stretch;justify-content:flex-start}
 #lbbar{display:flex;gap:8px;justify-content:flex-end;align-items:center;padding:calc(8px + env(safe-area-inset-top,0px)) 10px 8px;color:#fff}
@@ -90,15 +95,6 @@ a{color:var(--acc)}
 @media (prefers-reduced-motion:reduce){#bar{transition:none}}
 </style>
 </head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3PZZRLVMJC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3PZZRLVMJC');
-</script>
 <body>
 <main id="home">
 <section id="intro">
@@ -113,7 +109,7 @@ a{color:var(--acc)}
 <div id="inst" class="install" hidden>
 <div><p id="insttxt"></p><div class="row"><button class="btn sm" id="instgo" hidden>Vista sem app</button><button class="btn alt sm" id="instno">Ekki núna</button></div></div>
 </div>
-<button class="linkbtn" data-about>Um leikinn og höfund</button>
+<div class="row" style="align-items:center"><a class="btn alt sm" href="tilfelli.html">Tilfelli með umræðu →</a><button class="linkbtn" data-about>Um leikinn og höfund</button></div>
 </section>
 
 <section id="end" hidden>
@@ -159,9 +155,9 @@ a{color:var(--acc)}
 <!-- um leikinn -->
 <div class="modal" id="mabout" role="dialog" aria-modal="true" aria-labelledby="mat" hidden>
 <div class="box"><div class="brand"><img src="logo.png" alt="" width="56" height="56"><h2 id="mat" style="margin:0">Kirtlakver</h2></div>
-<p><a href="https://uni.hi.is/rafn/" target="_blank" rel="noopener">Rafn Benediktsson prófessor</a> (<a href="https://uni.hi.is/rafn/" target="_blank" rel="noopener">https://uni.hi.is/rafn/</a>) er höfundur þessa spurningabanka sem er hugsaður sem stuðningur við læknanema á 4. ári læknisfræði við Háskóla Íslands.</p>
-<p>Þakklátur fyrir ábendingar á <a href="mailto:rafn@hi.is">rafn@hi.is</a></p>
-<p class="small"><strong>Fyrirvari;</strong> Spurningar, svör og skýringar eru námsefni fyrir læknanema og eru ekki hugsuð sem klínískar leiðbeiningar enda breytast þær reglulega. Ekki byggja greiningu, meðferð eða lyfjaskömmtun á efni úr leiknum þar sem efnið getur innihaldið villur eða úrelt atriði, og ábyrgð á notkun þess er notanda. Ábendingar um villur eru vel þegnar.</p>
+<p>Höfundur og eigandi þessa spurningakvers er <a href="https://hi.is/starfsfolk/rafn" target="_blank" rel="noopener">Rafn Benediktsson prófessor</a>, forstöðumaður fræðigreinarinnar innkirtlalæknisfræði við Læknadeild Háskóla Íslands. Kverið er hugsað sem stuðningur við læknanema á 4. ári læknisfræði. Ég er læknir með sérfræðiréttindi í lyflækningum, innkirtla- og efnaskiptalækningum. Ég hlaut grunnmenntun í læknisfræði við Háskóla Íslands en stundaði framhaldsnám í Edinborg í Skotlandi á árunum 1990 – 1998 þar sem ég lauk doktorsprófi 1995. Ég gegni sem stendur samhliða starfi á Landspítala sem framkvæmdastjóri bráða-, lyflækninga og endurhæfingarþjónustu Landspítalans. Hef gert það frá miðju ári 2025 en var forstöðulæknir sama sviðs í rúmt ár þar áður. Ég var áður yfirlæknir innkirtlalækninga á Landspítala 2012 – 2024. Hér eru tenglar á <a href="http://scholar.google.is/citations?user=RApsSikAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> og <a href="https://orcid.org/0000-0002-2954-9801" target="_blank" rel="noopener">ORCID</a> síðu mína.</p>
+<p><strong>Fyrirvari;</strong> Spurningar, svör og skýringar eru til stuðnings við nám læknanema og er ekki ætlað öðrum, sérstaklega ekki almenningi. Efnið er ekki klínískar leiðbeiningar enda breytast þær reglulega. Það er því ekki ábyrgt að byggja greiningu, meðferð eða lyfjaskömmtun á efni úr kverinu þar sem efnið getur innihaldið villur eða úrelt atriði. Ábyrgð á notkun efnisins er þannig notanda. Ábendingar um villur eru vel þegnar.</p>
+<p>Ábendingar: <a href="mailto:rafn@hi.is">rafn@hi.is</a></p>
 <div class="col"><button class="btn alt" id="aboutinst" hidden>Vista sem app</button><button class="btn" data-close>Loka</button></div></div></div>
 
 <!-- uppsetning á iPhone -->
@@ -299,7 +295,8 @@ function grade(m){
 function reveal(x){
   locked=true;const r=$("#opts");r.innerHTML="";
   const fb=$("#fb");fb.className="ok";fb.hidden=false;fb.innerHTML="";
-  const s=document.createElement("strong");s.textContent="Svar";const t=document.createElement("div");t.className="wt";t.textContent=x.open;
+  const s=document.createElement("strong");s.textContent="Svar";const t=document.createElement("div");t.className="wt";
+  if(x.open)t.textContent=x.open;else rich(t,x.w||"",x.lk);
   fb.append(s,t);
   const row=document.createElement("div");row.className="row";
   const a=document.createElement("button");a.className="btn";a.textContent="Vissi þetta";a.onclick=()=>{fb.hidden=true;r.innerHTML="";result(true,x,"")};
@@ -312,7 +309,7 @@ function result(ok,x,extra,withAnswer){
   if(ok){right++;streak++;score+=10+Math.min(streak-1,5)*2}else{streak=0;missed.push(x)}
   const fb=$("#fb");fb.className=ok?"ok":"no";fb.hidden=false;fb.innerHTML="";
   const s=document.createElement("strong");s.textContent=ok?praise[Math.floor(Math.random()*praise.length)]:"Ekki alveg.";fb.append(s);
-  if(withAnswer||(x.open!==undefined&&ok)){const a=document.createElement("div");a.className="wt";a.textContent="Svar: "+x.open;fb.appendChild(a)}
+  if(x.open&&(withAnswer||ok)){const a=document.createElement("div");a.className="wt";a.textContent="Svar: "+x.open;fb.appendChild(a)}
   if(extra){const e=document.createElement("div");e.textContent=extra;fb.appendChild(e)}
   if(x.w){const w=document.createElement("div");w.className="wt";if(extra||withAnswer)w.style.marginTop=".4em";rich(w,x.w,x.lk);fb.appendChild(w)}
   if(x.wimg&&x.wimg.length){const h=document.createElement("div");imgButtons(h,x.wimg);fb.appendChild(h)}
