@@ -83,7 +83,7 @@ a{color:var(--acc)}
 @media (prefers-reduced-motion:reduce){#bar{transition:none}}
 
 /* ---- nýtt útlit: rammi, valmynd, forsíða ---- */
-:root{--z:1;--t1:#9fb0ff;--t2:#f4a897;--t3:#8fdcbc;--tink:#10203f}
+:root{--z:1}
 html,body{height:100%}
 body{margin:0;display:flex;flex-direction:column;height:100dvh;overflow:hidden;background:var(--bg);color:var(--ink);font:calc(17px*var(--z))/1.45 "Avenir Next","Segoe UI",system-ui,sans-serif;-webkit-text-size-adjust:100%;padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) 0 env(safe-area-inset-left,0)}
 #views{flex:1;min-height:0;position:relative}
@@ -96,15 +96,15 @@ h1{font-weight:800}
 .hero{display:flex;gap:14px;align-items:center;margin:4px 0 8px}
 .hero img{width:72px;height:72px;border-radius:18px;flex:none}
 .lead{margin:0 0 20px;color:var(--mute)}
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
-.tile{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-height:178px;border:0;border-radius:26px;padding:18px;text-align:left;color:var(--tink);box-shadow:0 6px 16px rgba(20,33,61,.16)}
-.tile svg{width:56px;height:56px;margin-bottom:auto}
-.tile{min-width:0}.tile b{font-size:1.02em;line-height:1.2;max-width:100%;hyphens:manual}
-.tile span{font-size:.85em;opacity:.85}
-.t1{background:var(--t1)}.t2{background:var(--t2)}
-.tile.wide{grid-column:1/-1;min-height:0;flex-direction:row;align-items:center;gap:14px;background:var(--t3)}
-.tile.wide svg{width:40px;height:40px;margin:0;flex:none}
-.tile.wide div{display:flex;flex-direction:column;gap:2px}
+.tiles{display:flex;flex-direction:column;gap:12px}
+.tile{display:flex;flex-direction:row;align-items:center;gap:16px;width:100%;min-width:0;min-height:88px;border:2px solid var(--acc);border-radius:14px;padding:14px 18px;text-align:left;background:var(--acc);color:var(--accink);box-shadow:0 2px 8px rgba(20,33,61,.12)}
+.tile svg{width:44px;height:44px;flex:none;margin:0}
+.tile div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.tile b{font-size:1.15em;line-height:1.2;max-width:100%;hyphens:manual}
+.tile span{font-size:.88em;opacity:.9}
+.tile:hover{filter:brightness(1.06)}
+.tile.alt{background:var(--card);color:var(--ink);border-color:var(--line);box-shadow:none}
+.tile.alt svg{color:var(--acc)}
 #nav{flex:none;display:flex;justify-content:space-around;gap:2px;background:var(--card);border-radius:22px 22px 0 0;box-shadow:0 -4px 18px rgba(20,33,61,.16);padding:8px 8px calc(8px + env(safe-area-inset-bottom,0px));z-index:20;position:relative}
 #nav button{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;background:none;border:0;border-radius:14px;padding:6px 2px;min-height:56px;color:var(--mute);font-size:.78rem;font-weight:600}
 #nav svg{width:26px;height:26px}
@@ -137,9 +137,9 @@ h1{font-weight:800}
 <div class="hero"><img src="logo.png" alt="" width="72" height="72"><h1>Kirtlakver</h1></div>
 <p class="lead">Ein spurning í einu, endurgjöf strax og engin tímapressa. Það geta verið mörg rétt svör.</p>
 <div class="tiles">
-<button class="tile t1" data-go="spurningar"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="25"/><path d="M24 25a8 8 0 1 1 11 7.4c-2.2 1-3 2.3-3 4.6"/><circle cx="32" cy="45" r="1.2"/></svg><b>Spurninga&shy;leikur</b><span id="hq-count">&nbsp;</span></button>
-<button class="tile t2" data-go="tilfelli"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="10" width="36" height="46" rx="6"/><path d="M24 10V7h16v3M22 28h20M22 36h20M22 44h12"/></svg><b>Tilfelli</b><span id="hc-count">&nbsp;</span></button>
-<button class="tile wide" id="t-inst"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="18" y="6" width="28" height="52" rx="6"/><path d="M32 18v20M24 31l8 8 8-8M28 50h8"/></svg><div><b>Vista sem app</b><span>Opnast beint af heimaskjánum</span></div></button>
+<button class="tile" data-go="spurningar"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="25"/><path d="M24 25a8 8 0 1 1 11 7.4c-2.2 1-3 2.3-3 4.6"/><circle cx="32" cy="45" r="1.2"/></svg><div><b>Spurningaleikur</b><span id="hq-count">&nbsp;</span></div></button>
+<button class="tile" data-go="tilfelli"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="10" width="36" height="46" rx="6"/><path d="M24 10V7h16v3M22 28h20M22 36h20M22 44h12"/></svg><div><b>Tilfelli</b><span id="hc-count">&nbsp;</span></div></button>
+<button class="tile alt" id="t-inst"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="18" y="6" width="28" height="52" rx="6"/><path d="M32 18v20M24 31l8 8 8-8M28 50h8"/></svg><div><b>Vista sem app</b><span>Opnast beint af heimaskjánum</span></div></button>
 </div></div></section>
 
 <section class="view" id="v-quiz" hidden>
@@ -148,7 +148,7 @@ h1{font-weight:800}
 <h1 id="title" style="margin-bottom:8px">Spurningaleikur</h1>
 <p>Veldu efni og fjölda spurninga.</p>
 <div id="cats"></div>
-<p style="margin-top:12px">Fjöldi spurninga: <select id="cnt"><option value="10">10</option><option value="20">20</option><option value="0">Allar</option></select></p>
+<p style="margin-top:12px">Fjöldi spurninga: <select id="cnt"><option value="5">5</option><option value="10">10</option><option value="20">20</option><option value="0">Allar</option></select></p>
 <div class="row"><button class="btn" id="go">Byrja</button></div>
 <p class="small" id="note" hidden style="margin-top:12px">Prufuútgáfa af spurningum er í notkun. <a href="#" id="clr">Hreinsa</a></p>
 </div></section>
@@ -163,7 +163,7 @@ h1{font-weight:800}
 <button class="btn alt" id="home2">Velja efni</button>
 </div></div></section>
 <section id="play" hidden>
-<div class="top"><span>Spurning <b id="n"></b></span><span>Stig <b id="s">0</b></span><span>Sigurganga <b id="k">0</b></span><button class="menu" id="menu" aria-haspopup="dialog">Valmynd</button></div>
+<div class="top"><span>Spurning <b id="n"></b></span><span>Rétt <b id="s">–</b></span><span>Sigurganga <b id="k">0</b></span><button class="menu" id="menu" aria-haspopup="dialog">Valmynd</button></div>
 <div class="track"><div id="bar"></div></div>
 <div id="scroll"><div class="card">
 <div id="cat"></div>
@@ -324,7 +324,7 @@ function render(){
   $("#cat").textContent=x.c;$("#q").textContent=x.q;
   $("#n").textContent=(i+1)+" / "+list.length;
   $("#bar").style.width=(i/list.length*100)+"%";
-  $("#s").textContent=score;$("#k").textContent=streak;
+  $("#s").textContent=pctTxt();$("#k").textContent=streak;
   $("#fb").hidden=true;$("#nx").hidden=true;$("#ans").hidden=true;$("#pbar").hidden=true;
   $("#hint").hidden=!m.multi;
   const qi=$("#qimgs");qi.innerHTML="";imgButtons(qi,x.img);
@@ -374,17 +374,20 @@ function result(ok,x,extra,withAnswer){
   if(extra){const e=document.createElement("div");e.textContent=extra;fb.appendChild(e)}
   if(x.w){const w=document.createElement("div");w.className="wt";if(extra||withAnswer)w.style.marginTop=".4em";rich(w,x.w,x.lk);fb.appendChild(w)}
   if(x.wimg&&x.wimg.length){const h=document.createElement("div");imgButtons(h,x.wimg);fb.appendChild(h)}
-  $("#s").textContent=score;$("#k").textContent=streak;
+  $("#s").textContent=pctTxt();$("#k").textContent=streak;
   const nx=$("#nx");nx.hidden=false;$("#pbar").hidden=false;nx.textContent=i+1<list.length?"Næsta spurning":"Sjá niðurstöðu";
   fb.scrollIntoView({block:"nearest"});nx.focus({preventScroll:true});
 }
+function pct(r,t){const p=r/t;return p===1?100:Math.min(99,Math.round(p*100))}
+function pctTxt(){return answered?pct(right,answered)+"%":"–"}
 function finish(){
   show("end");const t=answered,r=right;
   if(!t){show("intro");return}
   const p=r/t;
-  $("#res").textContent=r+" af "+t+" · "+score+" stig";
+  $("#res").textContent=pct(r,t)+"% rétt";
   let m=p===1?"Fullt hús. Frábært!":p>=.7?"Mjög gott. Þú ert vel inni í efninu.":p>=.4?"Ágætis byrjun. Prófaðu aftur og sjáðu hvað situr eftir.":"Þetta kemur. Farðu yfir skýringarnar og reyndu aftur.";
   if(t<list.length)m="Þú hættir eftir "+t+" af "+list.length+" spurningum. "+m;
+  m=r+" af "+t+" spurningum rétt. "+m;
   $("#msg").textContent=m;$("#redo").hidden=!missed.length;
 }
 
