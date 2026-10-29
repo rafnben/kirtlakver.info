@@ -4,8 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kirtlakver</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3PZZRLVMJC"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-3PZZRLVMJC');</script>
+<script data-goatcounter="https://rafnben.goatcounter.com/count" data-goatcounter-settings='{"no_onload":true}' async src="https://gc.zgo.at/count.js"></script>
 <meta name="robots" content="noindex, nofollow">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png">
@@ -19,9 +18,6 @@
 @media (prefers-color-scheme:dark){:root{--bg:#0e1626;--card:#162136;--ink:#e8eef8;--mute:#9aa8c0;--line:#2a3750;--acc:#6aa5ff;--accink:#06142e;--ok:#5fd18b;--okbg:#17352a;--no:#ff8a9d;--nobg:#3a1f29;--sel:#1a3050;--shade:rgba(0,0,0,.82)}}
 *{box-sizing:border-box}[hidden]{display:none!important}
 html,body{margin:0}
-body{background:var(--bg);color:var(--ink);font:17px/1.45 "Avenir Next","Segoe UI",system-ui,sans-serif;-webkit-text-size-adjust:100%;padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) env(safe-area-inset-bottom,0) env(safe-area-inset-left,0)}
-body.playing{height:100dvh;overflow:hidden}
-main{max-width:660px;margin:0 auto;padding:18px 16px 40px}
 h1{font-size:2rem;line-height:1.1;margin:0;letter-spacing:-.02em}
 h2{margin:0 0 12px;font-size:1.2em;line-height:1.35}
 p{margin:0 0 14px;color:var(--mute)}
@@ -40,11 +36,7 @@ a{color:var(--acc)}
 .brand{display:flex;gap:14px;align-items:center;margin-bottom:10px}
 .brand img{width:64px;height:64px;border-radius:15px;flex:none}
 .linkbtn{background:none;border:0;color:var(--acc);text-decoration:underline;padding:6px 2px;font-size:.95rem}
-.install{display:flex;gap:12px;align-items:flex-start;background:var(--sel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:14px}
-.install p{margin:0 0 8px;color:var(--ink);font-size:.95rem}
-.install .row{margin:0}
 /* ---- play ---- */
-#play{display:flex;flex-direction:column;height:100dvh;max-width:660px;margin:0 auto;padding:10px 14px 0;position:relative;--s:1}
 .top{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.92rem;color:var(--mute);margin-bottom:6px}
 .top b{color:var(--ink)}
 .top .menu{background:transparent;border:1px solid var(--line);border-radius:8px;padding:5px 10px;font-size:.9rem}
@@ -72,10 +64,6 @@ a{color:var(--acc)}
 #fb .imgbtn{margin:8px 8px 0 0}
 .pbar{position:absolute;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:linear-gradient(to top,var(--bg) 70%,transparent);display:flex;gap:10px}
 .pbar .btn{flex:1}
-.zoomctl{position:absolute;right:12px;bottom:calc(74px + env(safe-area-inset-bottom,0px));display:flex;background:var(--card);border:1px solid var(--line);border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.18);overflow:hidden;z-index:5}
-.zoomctl button{background:transparent;border:0;min-width:40px;height:36px;font-weight:700;font-size:1rem}
-.zoomctl button+button{border-left:1px solid var(--line)}
-.zoomctl .auto{font-size:.8rem;color:var(--mute);padding:0 10px}
 .big{font-size:2.4rem;font-weight:700;margin:4px 0}
 /* ---- modals ---- */
 .modal{position:fixed;inset:0;background:var(--shade);display:flex;align-items:center;justify-content:center;padding:16px;z-index:50}
@@ -93,26 +81,78 @@ a{color:var(--acc)}
 #lbimg{position:absolute;left:50%;top:50%;max-width:none;transform-origin:center center;user-select:none;-webkit-user-drag:none;background:#fff}
 @media (max-height:640px){#scroll .card{padding:10px 12px}.opt{padding:.4em .65em}}
 @media (prefers-reduced-motion:reduce){#bar{transition:none}}
+
+/* ---- nýtt útlit: rammi, valmynd, forsíða ---- */
+:root{--z:1;--t1:#9fb0ff;--t2:#f4a897;--t3:#8fdcbc;--tink:#10203f}
+html,body{height:100%}
+body{margin:0;display:flex;flex-direction:column;height:100dvh;overflow:hidden;background:var(--bg);color:var(--ink);font:calc(17px*var(--z))/1.45 "Avenir Next","Segoe UI",system-ui,sans-serif;-webkit-text-size-adjust:100%;padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) 0 env(safe-area-inset-left,0)}
+#views{flex:1;min-height:0;position:relative}
+.view{position:absolute;inset:0;overflow-y:auto;-webkit-overflow-scrolling:touch}
+#v-quiz.playing{overflow:hidden}
+.wrap{max-width:660px;margin:0 auto;padding:18px 16px 28px}
+#play{height:100%;max-width:660px;margin:0 auto;padding:10px 14px 0;position:relative;display:flex;flex-direction:column;--s:1}
+.pbar{padding-bottom:10px}.top{font-size:.85rem}.top span{white-space:nowrap}
+h1{font-weight:800}
+.hero{display:flex;gap:14px;align-items:center;margin:4px 0 8px}
+.hero img{width:72px;height:72px;border-radius:18px;flex:none}
+.lead{margin:0 0 20px;color:var(--mute)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.tile{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-height:178px;border:0;border-radius:26px;padding:18px;text-align:left;color:var(--tink);box-shadow:0 6px 16px rgba(20,33,61,.16)}
+.tile svg{width:56px;height:56px;margin-bottom:auto}
+.tile{min-width:0}.tile b{font-size:1.02em;line-height:1.2;max-width:100%;hyphens:manual}
+.tile span{font-size:.85em;opacity:.85}
+.t1{background:var(--t1)}.t2{background:var(--t2)}
+.tile.wide{grid-column:1/-1;min-height:0;flex-direction:row;align-items:center;gap:14px;background:var(--t3)}
+.tile.wide svg{width:40px;height:40px;margin:0;flex:none}
+.tile.wide div{display:flex;flex-direction:column;gap:2px}
+#nav{flex:none;display:flex;justify-content:space-around;gap:2px;background:var(--card);border-radius:22px 22px 0 0;box-shadow:0 -4px 18px rgba(20,33,61,.16);padding:8px 8px calc(8px + env(safe-area-inset-bottom,0px));z-index:20;position:relative}
+#nav button{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;background:none;border:0;border-radius:14px;padding:6px 2px;min-height:56px;color:var(--mute);font-size:.78rem;font-weight:600}
+#nav svg{width:26px;height:26px}
+#nav button.on{color:var(--acc);background:var(--sel)}
+.zpop{position:fixed;right:10px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:8px 10px;box-shadow:0 4px 18px rgba(0,0,0,.25);font-size:.9rem}
+.zpop button{background:var(--sel);border:1px solid var(--line);border-radius:10px;min-width:44px;height:40px;font-weight:700;font-size:1.05rem;padding:0 10px}
+.prog{display:flex;justify-content:space-between;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0 6px}
+.chip{position:relative;aspect-ratio:1;border:2px solid var(--line);border-radius:16px;background:var(--card);font-weight:800;font-size:1.3em;display:flex;align-items:center;justify-content:center}
+.chip.done{background:var(--okbg);border-color:var(--ok);color:var(--ok)}
+.chip.done::after{content:"✓";position:absolute;top:3px;right:7px;font-size:.6em}
+#c-bar{height:100%;width:0;background:var(--ok);transition:width .3s}
+#c-case{height:100%;max-width:660px;margin:0 auto;display:flex;flex-direction:column;padding:10px 14px 0}
+.chead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+.chead .btn{white-space:nowrap}
+#cc-scroll{flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.cfoot{display:flex;gap:10px;padding:10px 0}
+.cfoot .btn{flex:1}.btn:disabled{opacity:.4}
+.cbody p,.cbody li{color:var(--ink)}.cbody h3{font-size:1rem;margin:14px 0 4px}
+.cbody ul,.cbody ol{margin:0 0 12px;padding-left:1.3em}.cbody li p{margin:0 0 4px}
+#cc-disc{border-left:5px solid var(--ok);background:var(--okbg);border-radius:10px;padding:.7em .9em;margin-top:12px}
+#cc-disc p{color:var(--ink)}#cc-disc ol,#cc-disc ul{padding-left:1.3em}
+.donebtn{border:1px solid var(--line);border-radius:999px;background:var(--card);padding:6px 12px;font-weight:600;font-size:.9rem}
+.donebtn.on{background:var(--okbg);border-color:var(--ok);color:var(--ok)}
 </style>
 </head>
 <body>
-<main id="home">
-<section id="intro">
+<div id="views">
+<section class="view" id="v-home"><div class="wrap">
+<div class="hero"><img src="logo.png" alt="" width="72" height="72"><h1>Kirtlakver</h1></div>
+<p class="lead">Ein spurning í einu, endurgjöf strax og engin tímapressa. Það geta verið mörg rétt svör.</p>
+<div class="tiles">
+<button class="tile t1" data-go="spurningar"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="25"/><path d="M24 25a8 8 0 1 1 11 7.4c-2.2 1-3 2.3-3 4.6"/><circle cx="32" cy="45" r="1.2"/></svg><b>Spurninga&shy;leikur</b><span id="hq-count">&nbsp;</span></button>
+<button class="tile t2" data-go="tilfelli"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="10" width="36" height="46" rx="6"/><path d="M24 10V7h16v3M22 28h20M22 36h20M22 44h12"/></svg><b>Tilfelli</b><span id="hc-count">&nbsp;</span></button>
+<button class="tile wide" id="t-inst"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="18" y="6" width="28" height="52" rx="6"/><path d="M32 18v20M24 31l8 8 8-8M28 50h8"/></svg><div><b>Vista sem app</b><span>Opnast beint af heimaskjánum</span></div></button>
+</div></div></section>
+
+<section class="view" id="v-quiz" hidden>
+<section id="intro" class="wrap">
 <div class="card">
-<div class="brand"><img src="logo.png" alt="" width="64" height="64"><h1 id="title">Kirtlakver</h1></div>
-<p>Ein spurning í einu, endurgjöf strax og engin tímapressa. Það geta verið mörg rétt svör.</p>
+<h1 id="title" style="margin-bottom:8px">Spurningaleikur</h1>
+<p>Veldu efni og fjölda spurninga.</p>
 <div id="cats"></div>
 <p style="margin-top:12px">Fjöldi spurninga: <select id="cnt"><option value="10">10</option><option value="20">20</option><option value="0">Allar</option></select></p>
 <div class="row"><button class="btn" id="go">Byrja</button></div>
 <p class="small" id="note" hidden style="margin-top:12px">Prufuútgáfa af spurningum er í notkun. <a href="#" id="clr">Hreinsa</a></p>
-</div>
-<div id="inst" class="install" hidden>
-<div><p id="insttxt"></p><div class="row"><button class="btn sm" id="instgo" hidden>Vista sem app</button><button class="btn alt sm" id="instno">Ekki núna</button></div></div>
-</div>
-<div class="row" style="align-items:center"><a class="btn alt sm" href="tilfelli.html">Tilfelli með umræðu →</a><button class="linkbtn" data-about>Um leikinn og höfund</button></div>
-</section>
-
-<section id="end" hidden>
+</div></section>
+<section id="end" class="wrap" hidden>
 <div class="card">
 <h1>Niðurstaða</h1>
 <div class="big" id="res"></div>
@@ -121,12 +161,7 @@ a{color:var(--acc)}
 <button class="btn" id="again">Spila aftur</button>
 <button class="btn alt" id="redo" hidden>Æfa það sem ég missti</button>
 <button class="btn alt" id="home2">Velja efni</button>
-</div>
-</div>
-<button class="linkbtn" data-about>Um leikinn og höfund</button>
-</section>
-</main>
-
+</div></div></section>
 <section id="play" hidden>
 <div class="top"><span>Spurning <b id="n"></b></span><span>Stig <b id="s">0</b></span><span>Sigurganga <b id="k">0</b></span><button class="menu" id="menu" aria-haspopup="dialog">Valmynd</button></div>
 <div class="track"><div id="bar"></div></div>
@@ -139,8 +174,41 @@ a{color:var(--acc)}
 <div id="fb" hidden></div>
 </div></div>
 <div class="pbar" id="pbar" hidden><button class="btn" id="ans" hidden>Svara</button><button class="btn" id="nx" hidden>Næsta spurning</button></div>
-<div class="zoomctl" role="group" aria-label="Stærð texta"><button id="zauto" class="auto" hidden title="Sjálfvirk stærð">Sjálfvirkt</button><button id="zm" aria-label="Minnka letur">−</button><button id="zp" aria-label="Stækka letur">+</button></div>
 </section>
+</section>
+
+<section class="view" id="v-cases" hidden>
+<div id="c-list" class="wrap">
+<h1 style="margin-bottom:8px">Tilfelli</h1>
+<p>Sjúkratilfelli með umræðupunktum. Hugsaðu fyrst um spurningarnar og opnaðu svo umræðuna.</p>
+<div class="card">
+<div class="prog"><b id="c-prog"></b><span class="small" id="c-left"></span></div>
+<div class="track" style="margin-bottom:0"><div id="c-bar"></div></div>
+<div class="grid" id="c-grid"></div>
+<div class="row"><button class="btn" id="c-cont">Halda áfram</button><button class="btn alt" id="c-clear">Hreinsa merkingar</button></div>
+</div></div>
+<div id="c-case" hidden>
+<div class="chead"><button class="btn alt sm" id="cc-back">← Yfirlit</button><b id="cc-pos"></b><button class="donebtn" id="cc-done"></button></div>
+<div id="cc-scroll"><div class="card cbody">
+<h2 id="cc-title"></h2>
+<div id="cc-body"></div>
+<div id="cc-imgs"></div>
+<div class="row"><button class="btn" id="cc-reveal">Sýna umræðu</button></div>
+<div id="cc-disc" hidden></div>
+</div></div>
+<div class="cfoot"><button class="btn alt" id="cc-prev">‹ Fyrra</button><button class="btn" id="cc-next">Næsta ›</button></div>
+</div></section>
+
+<section class="view" id="v-about" hidden><div class="wrap"><div class="card">
+<div class="brand"><img src="logo.png" alt="" width="56" height="56"><h2 style="margin:0">Um Kirtlakver</h2></div>
+<p>Höfundur og eigandi þessa spurningakvers er <a href="https://hi.is/starfsfolk/rafn" target="_blank" rel="noopener">Rafn Benediktsson prófessor</a>, forstöðumaður fræðigreinarinnar innkirtlalæknisfræði við Læknadeild Háskóla Íslands. Kverið er hugsað sem stuðningur við læknanema á 4. ári læknisfræði. Ég er læknir með sérfræðiréttindi í lyflækningum, innkirtla- og efnaskiptalækningum. Ég hlaut grunnmenntun í læknisfræði við Háskóla Íslands en stundaði framhaldsnám í Edinborg í Skotlandi á árunum 1990 – 1998 þar sem ég lauk doktorsprófi 1995. Ég gegni sem stendur samhliða starfi á Landspítala sem framkvæmdastjóri bráða-, lyflækninga og endurhæfingarþjónustu Landspítalans. Hef gert það frá miðju ári 2025 en var forstöðulæknir sama sviðs í rúmt ár þar áður. Ég var áður yfirlæknir innkirtlalækninga á Landspítala 2012 – 2024. Hér eru tenglar á <a href="http://scholar.google.is/citations?user=RApsSikAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> og <a href="https://orcid.org/0000-0002-2954-9801" target="_blank" rel="noopener">ORCID</a> síðu mína.</p>
+<p><strong>Fyrirvari;</strong> Spurningar, svör og skýringar eru til stuðnings við nám læknanema og er ekki ætlað öðrum, sérstaklega ekki almenningi. Efnið er ekki klínískar leiðbeiningar enda breytast þær reglulega. Það er því ekki ábyrgt að byggja greiningu, meðferð eða lyfjaskömmtun á efni úr kverinu þar sem efnið getur innihaldið villur eða úrelt atriði. Ábyrgð á notkun efnisins er þannig notanda. Ábendingar um villur eru vel þegnar.</p>
+<p>Ábendingar: <a href="mailto:rafn@hi.is">rafn@hi.is</a></p>
+</div></div></section>
+</div>
+
+<div class="zpop" id="zpop" role="group" aria-label="Stærð texta" hidden><span>Letur</span><button id="zm" aria-label="Minnka letur">−</button><button id="zp" aria-label="Stækka letur">+</button><button id="zauto" hidden>Sjálfvirkt</button></div>
+<nav id="nav" aria-label="Aðalvalmynd"><button data-nav="forsida"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg>Forsíða</button><button data-nav="spurningar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 1-1 1.7M12 17v.1"/></svg>Spurningar</button><button data-nav="tilfelli"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2h6v2M12 9v7M8.5 12.5h7"/></svg>Tilfelli</button><button data-nav="um"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.1"/></svg>Um</button><button id="znav" aria-haspopup="true" aria-label="Stærð texta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19l5-13 5 13M5 14h6M15 19l3.5-8 3.5 8M16.3 16.5h4.4"/></svg>Letur</button></nav>
 
 <!-- valmynd -->
 <div class="modal" id="mmenu" role="dialog" aria-modal="true" aria-labelledby="mmt" hidden>
@@ -152,18 +220,10 @@ a{color:var(--acc)}
 <button class="btn alt" id="m-home">Velja efni</button>
 </div></div></div>
 
-<!-- um leikinn -->
-<div class="modal" id="mabout" role="dialog" aria-modal="true" aria-labelledby="mat" hidden>
-<div class="box"><div class="brand"><img src="logo.png" alt="" width="56" height="56"><h2 id="mat" style="margin:0">Kirtlakver</h2></div>
-<p>Höfundur og eigandi þessa spurningakvers er <a href="https://hi.is/starfsfolk/rafn" target="_blank" rel="noopener">Rafn Benediktsson prófessor</a>, forstöðumaður fræðigreinarinnar innkirtlalæknisfræði við Læknadeild Háskóla Íslands. Kverið er hugsað sem stuðningur við læknanema á 4. ári læknisfræði. Ég er læknir með sérfræðiréttindi í lyflækningum, innkirtla- og efnaskiptalækningum. Ég hlaut grunnmenntun í læknisfræði við Háskóla Íslands en stundaði framhaldsnám í Edinborg í Skotlandi á árunum 1990 – 1998 þar sem ég lauk doktorsprófi 1995. Ég gegni sem stendur samhliða starfi á Landspítala sem framkvæmdastjóri bráða-, lyflækninga og endurhæfingarþjónustu Landspítalans. Hef gert það frá miðju ári 2025 en var forstöðulæknir sama sviðs í rúmt ár þar áður. Ég var áður yfirlæknir innkirtlalækninga á Landspítala 2012 – 2024. Hér eru tenglar á <a href="http://scholar.google.is/citations?user=RApsSikAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> og <a href="https://orcid.org/0000-0002-2954-9801" target="_blank" rel="noopener">ORCID</a> síðu mína.</p>
-<p><strong>Fyrirvari;</strong> Spurningar, svör og skýringar eru til stuðnings við nám læknanema og er ekki ætlað öðrum, sérstaklega ekki almenningi. Efnið er ekki klínískar leiðbeiningar enda breytast þær reglulega. Það er því ekki ábyrgt að byggja greiningu, meðferð eða lyfjaskömmtun á efni úr kverinu þar sem efnið getur innihaldið villur eða úrelt atriði. Ábyrgð á notkun efnisins er þannig notanda. Ábendingar um villur eru vel þegnar.</p>
-<p>Ábendingar: <a href="mailto:rafn@hi.is">rafn@hi.is</a></p>
-<div class="col"><button class="btn alt" id="aboutinst" hidden>Vista sem app</button><button class="btn" data-close>Loka</button></div></div></div>
-
-<!-- uppsetning á iPhone -->
+<!-- vista sem app -->
 <div class="modal" id="mios" role="dialog" aria-modal="true" aria-labelledby="mit" hidden>
 <div class="box"><h2 id="mit">Vista sem app</h2>
-<p>Ýttu á deila-hnappinn í vafranum (ferningur með ör upp) og veldu „Bæta við heimaskjá“. Þá birtist Kirtlakver-táknið á símanum.</p>
+<p id="iostxt"></p>
 <div class="col"><button class="btn" data-close>Skil</button></div></div></div>
 
 <!-- myndagluggi -->
@@ -180,17 +240,18 @@ let ALL=[],list=[],i=0,score=0,streak=0,missed=[],locked=false,picked=new Set(),
 const IMG_SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></svg>';
 
 /* ---------- skjáir og gluggar ---------- */
+let quizSub="intro";
 function show(id){
-  $("#home").hidden=!(id==="intro"||id==="end");
+  quizSub=id;
   $("#intro").hidden=id!=="intro";$("#end").hidden=id!=="end";$("#play").hidden=id!=="play";
-  document.body.classList.toggle("playing",id==="play");window.scrollTo(0,0);
+  $("#v-quiz").classList.toggle("playing",id==="play");$("#v-quiz").scrollTop=0;
 }
 const stack=[];
 function openM(el,from){el.hidden=false;stack.push({el,from:from||document.activeElement});const f=el.querySelector("button");if(f&&el.id!=="lb")f.focus()}
 function closeM(el){el.hidden=true;const k=stack.findIndex(x=>x.el===el);if(k>=0){const o=stack.splice(k,1)[0];try{o.from&&o.from.focus&&o.from.focus()}catch(e){}}}
 document.addEventListener("click",e=>{
   const c=e.target.closest("[data-close]");if(c){closeM(c.closest(".modal"));return}
-  const a=e.target.closest("[data-about]");if(a){openM($("#mabout"),a)}
+  const a=e.target.closest("[data-about]");if(a){location.hash="um"}
 });
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&stack.length)closeM(stack[stack.length-1].el)});
 
@@ -199,7 +260,7 @@ async function load(){
   let d,own=store.get("kv_preview");
   if(own){try{d=JSON.parse(own);$("#note").hidden=false}catch(e){}}
   if(!d){const r=await fetch("questions.json",{cache:"no-cache"});d=await r.json()}
-  ALL=d.questions;if(d.title){$("#title").textContent=d.title;document.title=d.title}
+  ALL=d.questions;$("#hq-count").textContent=ALL.length+" spurningar";
   const cats=[...new Set(ALL.map(x=>x.c))];
   const box=$("#cats");box.innerHTML="";
   cats.forEach(c=>{const l=document.createElement("label");l.className="chk";const k=document.createElement("input");k.type="checkbox";k.checked=true;k.value=c;l.append(k,c+" ("+ALL.filter(x=>x.c===c).length+")");box.appendChild(l)});
@@ -330,23 +391,28 @@ function finish(){
 /* ---------- sjálfvirk stærð og zoom á texta ---------- */
 const STEPS=[.8,.9,1,1.1,1.25,1.4,1.6];
 function setS(v){$("#play").style.setProperty("--s",v)}
+function setZ(){document.documentElement.style.setProperty("--z",manual||1);$("#zauto").hidden=!manual}
 function fit(){
+  if(curView!=="quiz"||quizSub!=="play")return;
   const sc=$("#scroll");
   if(manual){setS(manual);return}
   let s=1;setS(s);
   for(let k=0;k<10&&sc.scrollHeight>sc.clientHeight+1&&s>.72;k++){s=+(s-.04).toFixed(2);setS(s)}
 }
 function zstep(d){
-  const cur=manual||parseFloat($("#play").style.getPropertyValue("--s"))||1;
-  let idx=STEPS.findIndex(v=>v>=cur-.001);if(idx<0)idx=STEPS.length-1;
-  const nxt=manual?idx+d:(d>0?STEPS.findIndex(v=>v>cur+.001):STEPS.length-1-[...STEPS].reverse().findIndex(v=>v<cur-.001));
-  manual=STEPS[Math.max(0,Math.min(STEPS.length-1,nxt<0?(d>0?STEPS.length-1:0):nxt))];
-  store.set("kv_scale",String(manual));$("#zauto").hidden=false;setS(manual);
+  const playing=curView==="quiz"&&quizSub==="play";
+  const cur=manual||(playing?parseFloat($("#play").style.getPropertyValue("--s"))||1:1);
+  let n;
+  if(d>0){n=STEPS.find(v=>v>cur+.001);if(n===undefined)n=STEPS[STEPS.length-1]}
+  else{n=[...STEPS].reverse().find(v=>v<cur-.001);if(n===undefined)n=STEPS[0]}
+  manual=n;store.set("kv_scale",String(manual));setZ();setS(manual);
 }
 $("#zp").onclick=()=>zstep(1);$("#zm").onclick=()=>zstep(-1);
-$("#zauto").onclick=()=>{manual=null;store.del("kv_scale");$("#zauto").hidden=true;fit()};
-{const v=parseFloat(store.get("kv_scale"));if(v>0){manual=v;$("#zauto").hidden=false}}
-let rt;addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(()=>{if(!$("#play").hidden&&!locked)fit()},120)});
+$("#zauto").onclick=()=>{manual=null;store.del("kv_scale");setZ();fit()};
+$("#znav").onclick=()=>{const p=$("#zpop");p.hidden=!p.hidden};
+document.addEventListener("click",e=>{if(!e.target.closest("#zpop,#znav"))$("#zpop").hidden=true});
+{const v=parseFloat(store.get("kv_scale"));if(v>0)manual=v;setZ()}
+let rt;addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(()=>{if(!locked)fit()},120)});
 
 /* ---------- valmynd í leik ---------- */
 $("#menu").onclick=e=>openM($("#mmenu"),e.currentTarget);
@@ -407,25 +473,70 @@ addEventListener("resize",()=>{if(!$("#lb").hidden)lbFit()});
 let dip=null;
 const standalone=matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
 const isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
-const mobile=/android|iphone|ipad|ipod|mobile/i.test(navigator.userAgent)||isIOS;
-function offerInstall(force){
-  if(standalone)return;
-  if(dip){$("#insttxt").textContent="Viltu vista Kirtlakver sem app á símanum? Þá opnast það beint af heimaskjánum, líka án nettengingar.";$("#instgo").hidden=false}
-  else if(isIOS){$("#insttxt").textContent="Þú getur vistað Kirtlakver sem app á heimaskjá símans.";$("#instgo").hidden=false}
-  else return;
-  if(force||!store.get("kv_inst")){$("#inst").hidden=false}
-  $("#aboutinst").hidden=false;
-}
-async function doInstall(){
-  if(dip){dip.prompt();try{await dip.userChoice}catch(e){}dip=null;$("#inst").hidden=true;$("#aboutinst").hidden=true;store.set("kv_inst","1")}
-  else if(isIOS){openM($("#mios"))}
-}
-addEventListener("beforeinstallprompt",e=>{e.preventDefault();dip=e;if(mobile||true)offerInstall()});
-addEventListener("appinstalled",()=>{$("#inst").hidden=true;$("#aboutinst").hidden=true;store.set("kv_inst","1")});
-$("#instgo").onclick=doInstall;$("#aboutinst").onclick=()=>{closeM($("#mabout"));doInstall()};
-$("#instno").onclick=()=>{$("#inst").hidden=true;store.set("kv_inst","1")};
-if(isIOS)offerInstall();
+$("#t-inst").hidden=standalone;
+addEventListener("beforeinstallprompt",e=>{e.preventDefault();dip=e});
+addEventListener("appinstalled",()=>{dip=null;$("#t-inst").hidden=true});
+$("#t-inst").onclick=async()=>{
+  if(dip){dip.prompt();try{await dip.userChoice}catch(e){}dip=null;return}
+  $("#iostxt").textContent=isIOS?"Ýttu á deila-hnappinn í vafranum (ferningur með ör upp) og veldu „Bæta við heimaskjá“. Þá birtist Kirtlakver-táknið á símanum.":"Opnaðu valmynd vafrans (⋮ eða deila-hnappinn) og veldu „Setja upp forrit“ eða „Bæta við heimaskjá“. Þá birtist Kirtlakver-táknið á símanum.";
+  openM($("#mios"));
+};
 
+/* ---------- valmynd neðst og leiðir ---------- */
+const ROUTES={forsida:"home",spurningar:"quiz",tilfelli:"cases",um:"about"};
+let curView="home";
+function go(name){
+  const v=ROUTES[name]||"home";curView=v;
+  document.querySelectorAll(".view").forEach(x=>x.hidden=x.id!=="v-"+v);
+  document.querySelectorAll("#nav [data-nav]").forEach(b=>{const on=ROUTES[b.dataset.nav]===v;b.classList.toggle("on",on);if(on)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});
+  $("#zpop").hidden=true;
+  if(v==="quiz")fit();
+  try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:"/"+(ROUTES[name]?name:"forsida")})}catch(e){}
+}
+function route(){go(location.hash.slice(1))}
+function navTo(n){if(location.hash.slice(1)===n)route();else location.hash=n}
+addEventListener("hashchange",route);
+document.querySelectorAll("[data-nav],[data-go]").forEach(b=>b.addEventListener("click",()=>navTo(b.dataset.nav||b.dataset.go)));
+
+/* ---------- tilfelli, eitt í einu ---------- */
+let CASES=[],cur=0;
+let doneSet=new Set();
+try{doneSet=new Set(JSON.parse(store.get("kv_cases_done")||"[]"))}catch(e){}
+const saveDone=()=>store.set("kv_cases_done",JSON.stringify([...doneSet]));
+const cDone=()=>CASES.filter(c=>doneSet.has(c.n)).length;
+function caseSub(id){$("#c-list").hidden=id!=="list";$("#c-case").hidden=id!=="case";$("#v-cases").scrollTop=0}
+function renderList(){
+  const g=$("#c-grid");g.innerHTML="";
+  CASES.forEach((c,k)=>{const b=document.createElement("button");b.className="chip"+(doneSet.has(c.n)?" done":"");b.textContent=c.n;
+    b.setAttribute("aria-label","Tilfelli "+c.n+(doneSet.has(c.n)?", lokið":", ekki lokið"));b.onclick=()=>openCase(k);g.appendChild(b)});
+  const d=cDone(),t=CASES.length;
+  $("#c-prog").textContent=d+" af "+t+" lokið";$("#c-left").textContent=d===t&&t?"Allt búið!":(t-d)+" eftir";
+  $("#c-bar").style.width=(t?d/t*100:0)+"%";$("#c-cont").hidden=d===t;
+  $("#hc-count").textContent=t+" tilfelli · "+d+" lokið";
+}
+function setDone(n,on){if(on)doneSet.add(n);else doneSet.delete(n);saveDone();renderList();showDone()}
+function showDone(){const c=CASES[cur],on=doneSet.has(c.n),b=$("#cc-done");b.classList.toggle("on",on);b.textContent=on?"✓ Lokið":"Merkja sem lokið";b.setAttribute("aria-pressed",on)}
+function openCase(k){
+  cur=k;const c=CASES[k];caseSub("case");
+  $("#cc-title").textContent="Tilfelli "+c.n;$("#cc-pos").textContent=(k+1)+" / "+CASES.length;
+  const body=$("#cc-body");body.innerHTML=c.body;
+  const imgs=$("#cc-imgs");imgs.innerHTML="";
+  const srcs=[...body.querySelectorAll("img")].map(im=>{const src=im.getAttribute("src");const p=im.closest("p");(p||im).remove();return src});
+  imgButtons(imgs,srcs);
+  $("#cc-disc").innerHTML=c.disc;$("#cc-disc").hidden=true;$("#cc-reveal").hidden=false;
+  $("#cc-prev").disabled=k===0;$("#cc-next").textContent=k+1<CASES.length?"Næsta ›":"Yfirlit";
+  $("#cc-scroll").scrollTop=0;showDone();
+}
+$("#cc-reveal").onclick=()=>{$("#cc-disc").hidden=false;$("#cc-reveal").hidden=true;setDone(CASES[cur].n,true);$("#cc-disc").scrollIntoView({block:"nearest"})};
+$("#cc-done").onclick=()=>setDone(CASES[cur].n,!doneSet.has(CASES[cur].n));
+$("#cc-back").onclick=()=>caseSub("list");
+$("#cc-prev").onclick=()=>{if(cur>0)openCase(cur-1)};
+$("#cc-next").onclick=()=>{if(cur+1<CASES.length)openCase(cur+1);else caseSub("list")};
+$("#c-cont").onclick=()=>{const k=CASES.findIndex(c=>!doneSet.has(c.n));openCase(k<0?0:k)};
+$("#c-clear").onclick=()=>{if(confirm("Hreinsa allar merkingar um lokin tilfelli?")){doneSet.clear();saveDone();renderList()}};
+fetch("cases.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{CASES=d.cases;renderList()}).catch(()=>{$("#c-grid").textContent="Ekki tókst að hlaða tilfellum."});
+
+show("intro");route();
 load().catch(()=>{$("#intro").insertAdjacentHTML("afterbegin","<p>Ekki tókst að hlaða spurningum. Opnaðu síðuna í gegnum vefþjón (ekki sem skrá).</p>")});
 if("serviceWorker"in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
 </script>
