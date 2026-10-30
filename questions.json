@@ -130,6 +130,154 @@
    "w": "Myndin samræmist Graves-sjúkdómi. Carbimazole, geislajoð og skurðaðgerð geta virkað en eru óheppileg þegar þungun er fyrirhuguð. Propylthiouracil veldur síður aplasia cutis hjá fóstri. Hlutabrottnám skjaldkirtils (subtotal thyroidectomy) gæti bætt stöðuna fyrir getnað, en fyrra bráðaofnæmi við aðgerð styður lyfjameðferð fyrst. Amiodarone getur aukið á ofvirknina. Ná þarf eðlilegri skjaldkirtilsstarfsemi fyrir getnað vegna aukinnar fósturlátshættu og nota örugga getnaðarvörn á meðan."
   },
   {
+   "c": "Skjaldkirtill",
+   "q": "Hvernig birtist forklínískur skjaldvakabrestur í blóðprófum?",
+   "o": [
+    "Hátt TSH og eðlilegt FT4",
+    "Lágt TSH og hátt FT4",
+    "Hátt TSH og hátt FT4",
+    "Lágt TSH og lágt FT4"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Hátt TSH með eðlilegu fT4 skilgreinir forklínískan skjaldvakabrest."
+  },
+  {
+   "c": "Skjaldkirtill",
+   "q": "Jákvæð TPO-mótefni og TSH >6 mU/L auka líkur á klínískum skjaldvakabresti.",
+   "rr": "rétt",
+   "w": "Tilvist mótefna gegn skjaldkirtilsperoxídasa (TPO) ásamt hækkuðu TSH gefur til kynna sjálfsofnæmi og það þýðir meiri líkur á að ástandið þróist yfir í fulla vanstarfsemi."
+  },
+  {
+   "c": "Skjaldkirtill",
+   "q": "Hvað er ráðlagt þegar hátt TSH finnst óvænt?",
+   "o": [
+    "Endurtaka mælingu og bæta við FT4 ásamt TPO-mótefnum",
+    "Hefja uppbótarmeðferð",
+    "Panta ómun af hálsi",
+    "Gera ekkert"
+   ],
+   "a": [
+    0
+   ],
+   "w": "TSH og frítt T4 þarf að túlka saman og með hliðsjón af veikindum, lyfjasögu ofl. Án skýrrar ábendingar ætti að öllu jöfnu ekki að mæla skjaldkitilshormón í fasa bráðra veikinda, sértsaklega ekki við spítalavist."
+  },
+  {
+   "c": "Skjaldkirtill",
+   "q": "Forklínísk ofstarfsemi skjaldkirtils getur tengst gáttatifi.",
+   "rr": "rétt",
+   "w": "Lágt eða bælt TSH, jafnvel þótt T3 og T4 séu eðlileg, getur aukið hættu á hjartsláttartruflunum eins og gáttatifi, sérstaklega hjá eldri einstaklingum."
+  },
+  {
+   "c": "Skjaldkirtill",
+   "q": "Við hvaða TSH-gildi er ábendingin um uppbótarmeðferð sterk?",
+   "o": [
+    "> 10 mU/L",
+    "> 5,5 mU/L",
+    "> 2,0 mU/L",
+    "> 3,0 mU/L"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Endurtekin mæling staðfestir að frávikið sé viðvarandi sem er mikilvægt áður en langtímameðferð er ákveðin. TSH-gildi yfir 10 mU/L er almennt talið skýr ábending fyrir meðferð með skjaldkirtilshormóni, jafnvel þótt sjúklingurinn sé einkennalaus. Líkurnar á áframhaldandi versnun eru verulegar enda flestir þeirra með jákvæðar mótefnamælingar."
+  },
+  {
+   "c": "Skjaldkirtill",
+   "q": "Um 80% af hormónaframleiðslu skjaldkirtils er T4.",
+   "rr": "rétt",
+   "w": "Skjaldkirtillinn framleiðir lítið af T3 en aðallega T4 (tyroxín) sem er forhormón. Umbreyting í virka hormónið T3 á sér stað úti í vefjum líkamans."
+  },
+  {
+   "c": "Skjaldkirtill",
+   "q": "Almenn veikindi geta brenglað mælingar á skjaldkirtilshormónum.",
+   "rr": "rétt",
+   "w": "Alvarleg almenn veikindi valda umfangsmiklum breytingum á umhverfi innan og utan frumu. Markverðar breytingar verða til dæmis á styrk sykurstera og ýmissa bólgumiðla. Þetta getur leitt til breytinga á framleiðslu, próteinbindingu og niðurbroti hormóna (e. non-thyroidal illness) og villt okkur sýn."
+  },
+  {
+   "c": "Skjaldkirtill",
+   "q": "Hvað er almennt ráðlagt hjá konu á Týroxín meðferð þegar þungunarpróf verður jákvætt?",
+   "o": [
+    "Auka skammt T4 um 25 – 30%",
+    "Hvíld og Yoga Nidra",
+    "Helminga skammt T4",
+    "Skipta yfir í T3"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Meðganga eykur þörf fyrir skjaldkirtilshormón, því er yfirleitt mælt með að auka skammtinn um þriðjung um leið og þungun staðfestist."
+  },
+  {
+   "c": "Skjaldkirtill",
+   "q": "Hvaða lyf getur valdið bæði of- og vanstarfsemi skjaldkirtils?",
+   "o": [
+    "Amíódarón",
+    "Metformín",
+    "Alendrónat",
+    "Insúlín"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Amíódarón er hjartalyf sem er mjög ríkt af joði og getur haft áhrif á skjaldkirtil. Amíódarón hemur umbreytingu T4 í T3 og veldur þannig fyrirsjáanlegum breytingum á mæligildum hormóna. Það getur einnig ýft upp undirliggjandi tilhneigingu til sjálfsofnæmis, hvort sem er of- eða vanstarfsemi. Ofstarfsemin getur verið illvíg og greinist í 2 tegundir sem krefjast mismunandi nálgunar hvað meðferð varðar."
+  },
+  {
+   "c": "Skjaldkirtill",
+   "q": "Hvaða einkenni eru dæmigerð við thyrotoxicosis?",
+   "o": [
+    "Megrun, skjálfti og hraðataktur",
+    "Þyngdaraukning og hægataktur",
+    "Kulvísi og hægðatregða",
+    "Dældabjúgur og hæsi"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Ofstarfsemi skjaldkirtils eykur efnaskiptahraða, sem veldur þyngdatapi þrátt fyrir aukna matarlyst, skjálfta, hjartsláttarónotum og hitatilfinningu (óþoli)."
+  },
+  {
+   "c": "Skjaldkirtill",
+   "q": "TRAb er meinvaldandi bæði innan og utan skjaldkirtils í Graves sjúkdómi.",
+   "rr": "rétt",
+   "w": "TR-Ab er mótefni gegn TSH viðtakanum sem virkjar hann (oftast, frekar en að blokka) og veldur þar með ofstarfsemi en tengjast einnig sértækum teiknum Graves utan skjaldkirtils svo sem augntóttasjúkdómi."
+  },
+  {
+   "c": "Skjaldkirtill",
+   "q": "Hvaða teikn er dæmigert við skjaldvakabrest?",
+   "o": [
+    "Seinkuð slökun sinaviðbragða",
+    "Hraðtaktur",
+    "Fínn skjálfti",
+    "Hitóþol"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Hæg slökun sinaviðbragða er klassískt klínískt teikn í vanstarfsemi skjaldkirtils."
+  },
+  {
+   "c": "Skjaldkirtill",
+   "q": "Gáttatif getur verið fylgikvilli ofstarfsemi skjaldkirtils.",
+   "rr": "rétt",
+   "w": "Gáttatif getur verið fylgikvilli ofstarfsemi skjaldkirtils vegna þess að (einkum T3), eykur næmi hjartans fyrir katekólamínum og eykur sjálfvirkni og rafleiðni í hjartanu. Hættan er mest hjá eldra fólki og einstaklingum með undirliggjandi hjartasjúkdóm, og stundum getur gáttatif jafnvel verið fyrsta einkenni ofstarfsemi. Því er mikilvægt að mæla TSH og fT4 hjá sjúklingi sem greinist með nýtilkomið gáttatif."
+  },
+  {
+   "c": "Skjaldkirtill",
+   "q": "Hvaða mótefni virkja TSH viðtakann í Graves sjúkdómi?",
+   "o": [
+    "TRAb",
+    "GAD65 mótefni",
+    "Thyroid Peroxidase (TPO-Ab)",
+    "Thyroglobulin mótefni"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Í Graves sjúkdómi myndast mótefni gegn TSH viðtakanum (TRAb) sem örvar (oftast, frekar en að blokka) viðtakann á skjaldkirtilsfrumum á svipaðan hátt og TSH og leiðir þannig til aukinnar myndunar og losunar skjaldkirtilshormóna. TRAb er því bæði mikilvægt í meingerð Graves og gagnlegt til að staðfesta greininguna. TPO-mótefni beinast gegn thyroid peroxidasa og thyroglobulin-mótefni (Tg-Ab) gegn thyroglobulini; þau eru merki um sjálfsofnæmi gegn skjaldkirtli en örva ekki TSH-viðtakann og geta sést bæði við Graves og Hashimoto skjaldkirtilsbólgu. GAD65 mótefni tengjast hins vegar sjálfsofnæmi gegn beta-frumum briskirtils, einkum sykursýki af tegund 1 og LADA, en ekki sjálfsofnæmissjúkdómum skjaldkirtils."
+  },
+  {
    "c": "Kalkkirtlar",
    "q": "Við fyrsta stigs ofvirkni kalkkirtla (frumkomið kalkvakaóhóf)",
    "o": [
@@ -179,31 +327,73 @@
    "w": "FHH er autosomal ríkjandi og stafar af sjúkdómsvaldandi breytileikum í CASR-geninu. Kalkhækkun er yfirleitt væg og veldur ekki þeim líffæraskemmdum sem sjást við frumkomið kalkvakaóhóf. Fyrri eðlileg kalsíumgildi styðja fremur nýlega tilkomið 1° kalkvakaóhóf. PTH í efri hluta viðmiðunarbils er algengt í því ástandi og greinir því ekki á milli þess og FHH."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
-   "q": "Eðlilegur blóðþrýstingur útilokar pheochromocytoma",
-   "rr": "rangt",
-   "w": "Háþrýstingur er til staðar í 80 - 90% þeirra sem eru með krómfíklaæxli en mynstur er mismunandi. Um 5 - 15% eru normotensívir, 10 - 20% með réttstöðulágþrýsting, um helmingur með viðvarandi háþrýsting og tæplega helmingur er með normotension og svo köst alvarlegs háþrýstings til viðbótar."
+   "c": "Kalkkirtlar",
+   "q": "Um 99% kalsíums líkamans er í beinum.",
+   "rr": "rétt",
+   "w": "Nær allur kalsíumforði líkamans er bundinn í beinum og tönnum, á meðan örlitur hluti er í utanfrumuvökva þar sem það gegnir hlutverki í starfsemi í taugamótum sem og vöðvasamdrætti."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
-   "q": "ACTH örvunarpróf (synacthen próf) er gagnlegt í Cushing´s syndrome",
-   "rr": "rangt",
-   "w": "Ef grunur um ofgnótt er bælipróf viðeigandi"
+   "c": "Kalkkirtlar",
+   "q": "Hvaða niðurstaða er dæmigerð fyrir frumkomið kalkvakaóhóf?",
+   "o": [
+    "Hækkað kalsíum og óviðeigandi hátt PTH",
+    "Lágt kalsíum og bælt PTH",
+    "Lágt kalsíum og hátt PTH",
+    "Hækkað kalsíum og ómælanlegt aldósterón"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Í frumkomnu kalkvakaóhófi er kalsíum hækkað og kalkvakahormón (PTH) er annaðhvort hækkað eða eðlilegt (sem telst óviðeigandi hátt miðað við hækkað kalsíum)."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
-   "q": "Yfirleitt þarf ekki að rannsaka slembihnúta (incidentaloma) í nýrnahettum séu þeir undir 4cm í þvermál",
-   "rr": "rangt",
-   "w": "Líkur á að nýrnahettuhnútur sé illkynja aukast vissulega séu þeir stærri en 4 cm en að öllu jöfnu þarf að velta fyrir sér eðli minni hnúta. Það felur m.a. í sér að meta þéttleika á tölvusneiðmynd (HU-einingar) varðandi þörf á eftirfylgd og almenn regla er að útiloka hormónaseytingu smærri hnúta með til dæmis LDDST (1m dex próf)"
+   "c": "Kalkkirtlar",
+   "q": "Hvaða einkenni getur fylgt blóðkalsíumlækkun?",
+   "o": [
+    "Carpopedal spasm",
+    "Stytt QT-bil",
+    "Hægðatregða",
+    "Polyuria án taugaeinkenna"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Við kalsíumröskun þarf fyrst að staðfesta raunverulegt kalsíumgildi með albúmínleiðréttingu eða jóniseruðu kalsíum. Alvarleg kalsíumlækkun eykur taugakerfisörvun og getur valdið krampa í höndum og fótum (carpopedal spasm)."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Kalkkirtlar",
+   "q": "Fyrir hvert 1 g/L frávik albúmíns frá 40 g/L er leiðrétting heildarkalsíums um 0,02 mmol/L.",
+   "rr": "rétt",
+   "w": "Þar eð stór hluti kalsíums í blóði bindst albúmíni þarf að leiðrétta heildarkalsíumgildið út frá albúmínstyrk til að fá rétta mynd eða mæla jóniserað kalsíum."
+  },
+  {
+   "c": "Kalkkirtlar",
+   "q": "Hvaða lyf getur hækkað kalsíum og ætti að varast við einkennalaust frumkomið kalkvakaóhóf?",
+   "o": [
+    "Þíasíðþvagræsilyf",
+    "Metformín",
+    "Levothyroxin í réttum skammti",
+    "Penicillín"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Þíasíðþvagræsilyf draga úr útskilnaði kalsíums um nýru og geta því dregið fram eða aukið blóðkalsíumhækkun."
+  },
+  {
+   "c": "Kalkkirtlar",
+   "q": "PTH hækkar kalsíum í blóði meðal annars með áhrifum á bein, nýru og virkjun D-vítamíns.",
+   "rr": "rétt",
+   "w": "PTH eykur kalsíumfrásog úr þvagi í nýrum, örvar beinniðurbrot til að losa kalsíum og örvar myndun virka formsins af D-vítamíni í nýrum sem aftur eykur frásog í þörmum."
+  },
+  {
+   "c": "Undirstúka og heiladingull",
    "q": "Þar sem þvag-natríum er hátt (salt wasting) í SIADH, er gjöf 0,9% saltvatns í æð fyrsta meðferð",
    "rr": "rangt",
    "w": "Þetta gæti raunar gert ástandið verra þar sem í þessu ástandi er ADH óviðeigandi hátt – nettó er saltið sem gefið var skilið út en vatninu haldið eftir"
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Við vanvirkni heiladinguls (hypopituitarism)",
    "o": [
     "verður uppbót með sykursterum að hefjast á undan skjaldkirtilsuppbót",
@@ -215,97 +405,67 @@
    "w": "Hefjist skjaldkirtilsuppbót á undan er hætta á adrenal krísu."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
-   "q": "Glucagon stimulation test er gjarnan notað til greiningar á pheochromocytoma",
-   "rr": "rangt",
-   "w": "Gæti valdið skyndilegri og hættulegri hækkun blóðþrýstings"
-  },
-  {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Vegna dægusveiflunnar er ávallt best að taka týroxín uppbót að morgni",
    "rr": "rangt",
    "w": "Það skiptir meira máli að taka levothyroxín reglulega við sambærilegar aðstæður með tilliti til matar og lyfja sem trufla frásog (járn, kalk ofl), heldur en að taka það endilega að morgni."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Ventromedial kjarninn í undirstúku er talinn gegna lykilhlutverki hvað varðar dægursveiflu hormóna",
    "rr": "rangt",
    "w": "Rétti kjarninn er suprachiasmatic nucleus (SCN) í undirstúku. Hann er aðal „klukka“ líkamans og samhæfir dægursveiflur, þar á meðal hormónaseytingu. Ventromedial kjarninn (VMN/VMH) tengist hins vegar einkum stjórnun á orkubúskap, fæðuinntöku og efnaskiptum."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Algengustu æxlin í heiladingli eru svokölluð núll-æxli",
    "rr": "rétt",
    "w": "https://pubmed.ncbi.nlm.nih.gov/26423473/"
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Ekki er alltaf nauðsynlegt að meðhöndla hátt prólaktín",
    "rr": "rétt",
    "w": "Meginatriðið er að meðhöndla ekki rannsóknarniðurstöðuna eina og sér. Meta þarf orsök og klíníska þýðingu hyperprolactinemiu. Ef hækkunin er væg/einkennalaus, postmenopausal eða skýrist af lífeðlisfræðilegum eða lyfjatengdum þáttum þarf ekki endilega að meðhöndla."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Kjörmeðferð prólaktínóma er skurðaðgerð",
    "rr": "rangt",
    "w": "Kjörmeðferð flestra prolactinoma er lyfjameðferð með dopamine agonista, yfirleitt cabergoline. Skurðaðgerð er meðal annars valkostur þegar lyfjameðferð þolist ekki eða nægileg svörun fæst ekki."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Tunnel vision er dæmigerð fyrir macroadenoma í heiladingli",
    "rr": "rangt",
    "w": "Þetta er mjög ónákvæm fullyrðing. Bitemporal hemianopia er dæmigerð sjónsviðsskerðing af völdum macroadenoma í heiladingli."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "NSAID lyf eru ráðleg í löngum (ultramaraþon) utanvegahlaupum",
    "rr": "rangt",
    "w": "Rannsóknir benda til þess að slík notkun auki hættu á nýrnaskaða (AKI) en einnig er þekkt að langvarandi áreynsla veldur non-osmotic ADH-seytingu og hættu á „exercise-associated hyponatremia“. Hér er vert að muna að prostaglandín draga úr áhrifum ADH í nýrum og NSAID hamla prostaglandínmyndun og geta því magnað vatnssparandi áhrif ADH"
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
-   "q": "Sekúnder Addisons sjúkdómur fylgir gjarnan Vitiligo",
-   "rr": "rangt",
-   "w": "Þetta er að hluta orðaleikur. Addison lýsti nýrnahettusjúkdómi (primary adrenal insufficiency). Það er því varla hægt að tala um sekúnder Addison heldur ætti orðalagið að vera sekúnder nýrnahettubilun."
-  },
-  {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Hefðbundin aðferð til að greina Æsavöxt (Acromegaly) er sykurþolspróf",
    "rr": "rétt",
    "w": "Í dag er s-IGF-1 fyrsta rannsóknin þegar grunur vaknar um acromegaly, þar sem IGF-1 endurspeglar samþætta GH-seytingu yfir tíma. Sykurþolspróf (Oral glucose tolerance test: OGTT) með mælingum á VH er síðan notað til formlegrar staðfestingar"
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
-   "q": "Hyponatraemia er fylgifiskur sekúnder nýrnahettubilunar",
-   "rr": "rétt",
-   "w": "Við sekúnder nýrnahettubilun er ACTH lágt og þar með kortisólskortur. Kortisól hemur að hluta losun ADH/AVP, þannig að við kortisólskort eykst ADH-virkni og útskilnaður frís vatns minnkar. Afleiðingin getur verið þynningarhyponatraemia (dilutional)."
-  },
-  {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Lágt natríum í þvagi er dæmigert fyrir vökvaskort af völdum niðurgangs eða þvagræsilyfja",
    "rr": "rangt",
    "w": "Þvagræsilyf eru einmitt notuð til þess að losa líkamann við natríum via nýru. Það er því ekki hægt að túlka natríummælingar í þvagi þegar fólk er á diuretica nema sem staðferstinu á meðferðarheldni. Lykilorðið hér er \"eða\""
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Við tíðahvörf hækkar þéttni FSH í blóði",
    "rr": "rétt",
    "w": "Við tíðahvörf minnkar starfsemi eggjastokka og framleiðsla estradíóls og inhibins minnkar. Þar með minnkar neikvæð afturvirkni á hypothalamus-heiladingulsöxulinn og FSH hækkar, yfirleitt meira en LH"
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
-   "q": "s-ACTH er hátt í sjúkdómi Addisons",
-   "rr": "rétt",
-   "w": "Addison-sjúkdómur er frumkomin nýrnahettubilun. Það leiðir til minnkaðrar neikvæðrar afturvirkni á heiladingul og undirstúku og því hækkar ACTH. Hækkað ACTH tengist einnig aukinni melanocortin-virkni og skýrir hyperpigmentation sem getur sést við Addison. Þetta er gagnlegt til aðgreiningar frá miðlægri eða sekúnder nýrnahettubilun, þar sem ACTH er lágt eða „óeðlilega eðlilegt“ og hyperpigmentation ekki dæmigert teikn"
-  },
-  {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
-   "q": "Dexamethasone bælipróf er gagnlegt til greiningar á sjúkdómi Addisons",
-   "rr": "rangt",
-   "w": "Ef grunur um skort er örvunarpróf viðeigandi – hér svokallað stutt Synacthen próf"
-  },
-  {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Eftirtaldir anatomískir strúktúrar liggja að Tyrkjasöðli (sella turcica)",
    "o": [
     "sinus cavernosus, a. carotis interna og þriðja heilataugin",
@@ -317,7 +477,7 @@
    "w": "Fjöldi mikilvægra strúktúra liggja nálægt Tyrkjasöðlinum (sella turcica) og geta orðið fyrir truflunun vegna æxlisvaxtar í heiladingli. Hliðlægt næst Tyrkjasöðlinum (sem hefur ekki hliðlæga beinveggi) liggur groppustokkur (sinus cavernosus) og í gegnum hann liggur sjötta heilataugin. Þriðja, fjórða og tvær efri greinar fimmtu heilataugar liggja að hliðlægum vegg sinusins. Innri hálsslagæð (a. carotis interna) liggur í skútanum hliðlægt við söðulbakið (dorsum sellae) og hlykkjast undir „öxlina” á því. Tyrkjasöðullinn er dæld í þakinu á fleygbeinsskútanum (sinus sphenoidalis), og stundum vex heiladingulsæxli niður í þennan skúta."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Aukinn styrkur prólaktíns í blóði getur orsakast af:",
    "o": [
     "Þungun eða álagi (stressi)",
@@ -329,7 +489,7 @@
    "w": "Hyperprólaktínemía getur fylgt acromegaly annað hvort vegna þess að heiladingulsæxlið inniheldur bæði somatotrop- og lactotrop-frumur eða vegna þess að æxlið truflar flutning á dópamíni (sem hindrar venjulega prólaktínseytun) frá undirstúku (hypothalamus). Dópamínvirkir agónistar s.s. bromocriptine, quinagolide og cabergoline hindra seytun prólaktíns og notkun þeirra getur valdið því að prólaktínseytandi æxli minnka. Metoclopramíð og aðrir dópamínvirkir blokkar örva prólaktínseytun. Dæmi um önnur lyf eru ýmis geðlyf. Skemmdir á undirstúku af völdum geislameðferðar valda oft hyperprólaktínemíu."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Við vanvirkni heiladinguls (hypopituitarism)",
    "o": [
     "þarf venjulega að bæta upp með saltsterum",
@@ -341,7 +501,7 @@
    "w": "Einangraður skortur á kortísóli getur hulið diabetes insipidus, líklega vegna þess að slíkur skortur lækkar GFR (glomerular filtration rate). Athugið einnig að eitt mikilvægasta stýrihormón losunar ACTH er Vasópressín (ADH). Diabetes insipidus getur því komið fram þegar uppbót sykurstera hefst. Aldósterónframleiðsla og -seytun á sér stað í zona glomerulosa nýrnahettubarkar og er að mestu óháð ACTH. Saltsteraskortur sem þarf á uppbótarmeðferð að halda er því yfirleitt ekki fylgikvilli heiladingulsvanvirkni."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Nephrogenic diabetes insipidus (NDI)",
    "o": [
     "einkennist af lágum styrk ADH í blóði",
@@ -356,7 +516,7 @@
    "w": "NDI er af völdum ónæmis markvefja fyrir ADH (distal tubuli og safnrás nýrna). ADH-seytun er ekki of lítil heldur í efri mörkum eðlilegs eða of mikil. Ýmislegt getur valdið NDI, þ.á.m. kyntengt víkjandi gen, liþíum-meðferð, demeklósyklín-meðferð (afturkræft ef þessum lyfjameðferðum er hætt), hypercalcemia og langvarandi kalíumskortur. Þótt það virðist mótsagnakennt, svara sumir sjúklingar með cranial eða neprogenic DI thiazide þvagræsilyfjum, en ekki er með fullu vitað með hvaða hætti (mechanism of action). Klórprópamíð er sulfonylurea lyf sem gerir nýrnapíplurnar næmari fyrir ADH og er notað til að meðhöndla væg tilfelli CDI, en hefur ekki áhrif í NDI"
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Á meðal einkenna acromegaly eru",
    "o": [
     "Minni styrkur insúlín-líks vaxtarþáttar 1 (IGF-1)",
@@ -368,7 +528,7 @@
    "w": "Við acromegaly (æsavöxt) má meðal annars sjá stækkun handa og fóta með aukinni skó- og hringastærð, grófari andlitsdrætti og prognathiu, aukna svitamyndun, höfuðverk, liðverki, carpal tunnel syndrome, kæfisvefn, háþrýsting,skert sykurþol eða sykursýki; við stórt heiladingulsæxli geta jafnframt komið fram sjónsviðstruflanir vegna þrýstings á optic chiasm"
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
    "q": "Í lystarstoli (anorexia nervosa)",
    "o": [
     "tapa sjúklingar skapahárum",
@@ -383,7 +543,81 @@
    "w": "Innkirtlavandamál í lystarstoli geta verið af völdum vannæringar eða þyngdartaps. Gonadótrópín-styrkur er lágur, auk þess sem hið venjulega hviðukennda mynstur seytunar tapast (mynstur verður eins og hjá stúlkum fyrir kynþroska). Kortísólstyrkur er við efri mörk eðlilegs eða of hár (jafnvel tengt þunglyndi), og hár styrkur vaxtarhormóna getur endurspeglað minni neikvæða afturvirkni á heiladingul vegna lágs styrks IGF í blóði. Lystarstolið og þyngdartapið geta byrjað fyrir fyrstu tíðir og hindrað þannig seytun gónadótrópíns á kynþroskaaldri og því einnig framgang kynþroska. Hækkað blóðsökk bendir til líkamlegra sjúkdóma (blóðsökk er eðlilegt eða lágt í lystarstoli). Tap skapahára bendir til vanvirkni heiladinguls (skapahár verða fíngerð í lystarstoli auk þess sem dökk hár geta komið á líkama og andlit)"
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Undirstúka og heiladingull",
+   "q": "Sheehan syndrome er óalgengur fylgikvilli fæðingar",
+   "rr": "rétt",
+   "w": "Sheehan syndrome er hypopituitarism vegna ischemísks skaða/dreps í heiladingli í tengslum við mikla blæðingu og/eða hypotension við fæðingu. Dæmigerðar vísbendingar eftir slíka fæðingu eru erfiðleikar við brjóstagjöf vegna prolactínskorts og amenorrhea vegna gonadotropínskorts, en síðar geta komið fram einkenni secondary hypothyroidism og ACTH-skorts"
+  },
+  {
+   "c": "Undirstúka og heiladingull",
+   "q": "Hvaða sjónsviðsgalli er dæmigerður við þrýsting á sjóntaugavíxl?",
+   "o": [
+    "Bitemporal hemianopia",
+    "Tunnel Vision",
+    "Litblinda",
+    "Næturblinda"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Sjóntaugavíxlin (optic chiasm) liggja rétt ofan við heiladingul. Þar krossa taugaþræðir frá nefhlið sjónhimnu beggja augna, en þeir flytja upplýsingar frá temporal, eða ytri, hluta sjónsviðsins. Þrýstingur á miðhluta sjóntaugavíxla, til dæmis frá stækkandi heiladingulsæxli, skaðar því þessa krossandi þræði og veldur bitemporal hemianopiu, þ.e. tapi á ytri helmingi sjónsviðs beggja augna."
+  },
+  {
+   "c": "Undirstúka og heiladingull",
+   "q": "Prólaktínóma getur valdið tíðatruflunum, ófrjósemi og galactorrhoea hjá konum.",
+   "rr": "rétt",
+   "w": "Prólaktínóma er prólaktínseytandi heiladingulsæxli. Hækkað prólaktín hamlar losun GnRH frá undirstúku og dregur þannig úr seytingu LH og FSH frá heiladingli. Afleiðingin er minnkuð starfsemi kynkirtla með trufluðu egglosi, óreglulegum blæðingum eða tíðastoppi og ófrjósemi. Prólaktín örvar jafnframt mjólkurmyndun í brjóstum og getur því valdið galactorrhoea, þ.e. mjólkurseytingu án tengsla við meðgöngu eða brjóstagjöf.."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Eðlilegur blóðþrýstingur útilokar pheochromocytoma",
+   "rr": "rangt",
+   "w": "Háþrýstingur er til staðar í 80 - 90% þeirra sem eru með krómfíklaæxli en mynstur er mismunandi. Um 5 - 15% eru normotensívir, 10 - 20% með réttstöðulágþrýsting, um helmingur með viðvarandi háþrýsting og tæplega helmingur er með normotension og svo köst alvarlegs háþrýstings til viðbótar."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "ACTH örvunarpróf (synacthen próf) er gagnlegt í Cushing´s syndrome",
+   "rr": "rangt",
+   "w": "Ef grunur um ofgnótt er bælipróf viðeigandi"
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Yfirleitt þarf ekki að rannsaka slembihnúta (incidentaloma) í nýrnahettum séu þeir undir 4cm í þvermál",
+   "rr": "rangt",
+   "w": "Líkur á að nýrnahettuhnútur sé illkynja aukast vissulega séu þeir stærri en 4 cm en að öllu jöfnu þarf að velta fyrir sér eðli minni hnúta. Það felur m.a. í sér að meta þéttleika á tölvusneiðmynd (HU-einingar) varðandi þörf á eftirfylgd og almenn regla er að útiloka hormónaseytingu smærri hnúta með til dæmis LDDST (1m dex próf)"
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Glucagon stimulation test er gjarnan notað til greiningar á pheochromocytoma",
+   "rr": "rangt",
+   "w": "Gæti valdið skyndilegri og hættulegri hækkun blóðþrýstings"
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Sekúnder Addisons sjúkdómur fylgir gjarnan Vitiligo",
+   "rr": "rangt",
+   "w": "Þetta er að hluta orðaleikur. Addison lýsti nýrnahettusjúkdómi (primary adrenal insufficiency). Það er því varla hægt að tala um sekúnder Addison heldur ætti orðalagið að vera sekúnder nýrnahettubilun."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Hyponatraemia er fylgifiskur sekúnder nýrnahettubilunar",
+   "rr": "rétt",
+   "w": "Við sekúnder nýrnahettubilun er ACTH lágt og þar með kortisólskortur. Kortisól hemur að hluta losun ADH/AVP, þannig að við kortisólskort eykst ADH-virkni og útskilnaður frís vatns minnkar. Afleiðingin getur verið þynningarhyponatraemia (dilutional)."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "s-ACTH er hátt í sjúkdómi Addisons",
+   "rr": "rétt",
+   "w": "Addison-sjúkdómur er frumkomin nýrnahettubilun. Það leiðir til minnkaðrar neikvæðrar afturvirkni á heiladingul og undirstúku og því hækkar ACTH. Hækkað ACTH tengist einnig aukinni melanocortin-virkni og skýrir hyperpigmentation sem getur sést við Addison. Þetta er gagnlegt til aðgreiningar frá miðlægri eða sekúnder nýrnahettubilun, þar sem ACTH er lágt eða „óeðlilega eðlilegt“ og hyperpigmentation ekki dæmigert teikn"
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Dexamethasone bælipróf er gagnlegt til greiningar á sjúkdómi Addisons",
+   "rr": "rangt",
+   "w": "Ef grunur um skort er örvunarpróf viðeigandi – hér svokallað stutt Synacthen próf"
+  },
+  {
+   "c": "Nýrnahettur",
    "q": "Eftirtalin teikn benda til ónógrar sykursterauppbótar (glucocorticoid replacement) í Addisons sjúkdómi:",
    "o": [
     "Svefnleysi (insomnia)",
@@ -396,7 +630,7 @@
    "w": "Einkenni og teikn sem geta bent til ónógrar sykursterauppbótar við Addison-sjúkdóm eru viðvarandi þreyta og slappleiki, ógleði, lystarleysi og þyngdartap, auk svima eða lágþrýstings. Við prímer nýrnahettubilun getur áframhaldandi eða vaxandi hyperpigmentation einnig bent til ónógrar glucocorticoid-uppbótar vegna viðvarandi hás ACTH. Hins vegar endurspegla saltlöngun, hyponatraemia og hyperkalaemia frekar skort á mineralocorticoid-virkni og geta því bent til þess að fludrocortisone-uppbót sé ófullnægjandi"
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Nýrnahettur",
    "q": "Orsök hypokalemiu með aukinni renínvirkni í blóði getur verið",
    "o": [
     "Lakkrísneysla",
@@ -409,7 +643,7 @@
    "w": "Ofantaldir þættir valda allir hypokalemiu og heildarskerðingu kalíummagns í líkamanum sem getur verið alvarleg og með einkennum. Mikilvæg mismunagreining er Conn’s heilkenni, þar sem fyrsta stigs offramleiðsla aldósteróns eykur natríum-kalíum skipti í distal tubule, og minnkar þar með útskilnað natríum (veldur þannig háþrýstingi) en eykur útskilnað kalíum í þvagi. Í fyrsta stigs aldósterónheilkenni (1° hyperaldosteronism), bælist renínvirkni í blóði vegna yfirmagns vatns og natríum. Þetta gerist einnig við lakkrísneyslu en lakkrís hemur virkni ensímsins 11β-hydroxysteroid dehydrogenasa sem annars gefur saltsteraviðtakanum sértækni. Blokkun ensímsins veldur því að kortísól (sykursteri) binst (nú) ósértækum saltsteraviðtakanum, virkjar hann, veldur hypernataemíu, hypokalaemíu og háþrýstingi auk þess sem bæði renín og aldósterónframleiðsla bælist."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Nýrnahettur",
    "q": "Pheochromocytoma",
    "o": [
     "er útilokað með venjulegri tölvusneiðmynd (CT-scan)",
@@ -424,37 +658,31 @@
    "w": "Að minnsta kosti 10% pheochromocytoma liggja utan nýrnahettna en jafnvel þau sem eru staðsett í nýrnahettum greinast stundum ekki á tölvusneiðmynd. Auk adrenalíns (sem er aðalseytiefni nýrnahettuæxla) og noradrenalíns (sem er aðalsseytiefni æxla sem eru utan nýrnahettna) getur æxlið seytt dópamíni, sérstaklega ef um illkynja æxli er að ræða. Pheochromocytoma er oft í fylgd með merggerðarmeinum (medullary carcinoma) skjaldkirtil- og kalkkirtilæxla (MEN-2), en ekki með æxlum í innkirtilshluta briss og heiladingli (MEN-1). Meðferð með β-blokkerum eingöngu er hættuleg: brottnám β-adrenvirkrar æðavíkkunar í rákóttum vöðvum getur valdið háþrýstingskasti. Meðferð ætti því að hefjast með α-blokkara (t.d. phenoxybenzamine eða doxazosín) og síðan mætti bæta inn β-blokkerum til að stjórna 2° of hröðum hjartslætti (tachycardia). VMA í þvagi er úrelt við greiningu en mæling á umbrotsefnum katekólamína (metanefrín) eða katekólamína (noradr. og adr.) hefur mun betra næmi og sértækni (sensitivity & specificity)."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Nýrnahettur",
    "q": "Algengasta orsök Cushing sjúkdóms er notkun sykurstera í lækningaskyni",
    "rr": "rangt",
    "w": "Hér er það spurningin um syndrome vs disease"
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
-   "q": "Sheehan syndrome er óalgengur fylgikvilli fæðingar",
-   "rr": "rétt",
-   "w": "Sheehan syndrome er hypopituitarism vegna ischemísks skaða/dreps í heiladingli í tengslum við mikla blæðingu og/eða hypotension við fæðingu. Dæmigerðar vísbendingar eftir slíka fæðingu eru erfiðleikar við brjóstagjöf vegna prolactínskorts og amenorrhea vegna gonadotropínskorts, en síðar geta komið fram einkenni secondary hypothyroidism og ACTH-skorts"
-  },
-  {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Nýrnahettur",
    "q": "Eðlilegt kalíum í sermi útilokar hyperaldosteronisma",
    "rr": "rangt",
    "w": "Í frumkominni aldósterónofgnótt er kalíum oft eðlilegt. Því má alls ekki útiloka sjúkdóminn á grundvelli eðlilegs s-K eingöngu."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Nýrnahettur",
    "q": "Hulduhnútar (incidentaloma) í nýrnahettum reynast oftast framleiða aldósterón í of miklu magni",
    "rr": "rangt",
    "w": "Flest adrenal incidentaloma eru góðkynja, óstarfandi adenoma. Þegar hormónaframleiðsla er til staðar er væg sjálfvirk (autonom) kortisólseyting mun algengari en primary aldosteronismi. Aldósterónframleiðslu þarf sérstaklega að kanna hjá sjúklingum með háþrýsting og/eða óútskýrða hypokalaemiu"
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Nýrnahettur",
    "q": "21alpha-Hydroxylasa skortur (bilun) er algengasta orsök Congenital Adrenal Hyperplasíu með háþrýstingi",
    "rr": "rangt",
    "w": "21α-hydroxylasa skortur er vissulega langalgengasta orsök CAH almennt, en veldur ekki dæmigerðri hypertension. Við alvarlegan skort minnkar aldósterónmyndun og sjúklingar geta fengið „salt wasting“, hypotension og hyperkalaemiu. CAH með háþrýstingi sést hins vegar einkum við 11β-hydroxylasa skort eða 17α-hydroxylasa skort, þar sem sterar með mineralocorticoid-virkni safnast upp"
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Nýrnahettur",
    "q": "Haraldur er 42 ára en hann hefur í sex mánuði þyngst og fundið fyrir þreytu og vöðvaslappleika. Miðlæg offita og húðslit á kvið leiddu til tilvísunar á innkirtlagöngudeild. Hann er ekki (né nýlega) tekið sykurstera um munn eða sem innúðalyf. Rannsóknir sýna: a. Lágskammta dexametasón-bælipróf (LDDST): kortisól eftir 48 klst. 125 nmol/L (eðlileg bæling < 50 nmol/L [1,8 μg/dL]), b. Munnvatnskortisól kl. 23: 18,4 nmol/L og 16,8 nmol/L við endurtekningu (viðmið < 3,6) og c. ACTH í plasma kl. 09: ómælanlegt (1,5–13,9 pmol/L)\n\nHvaða rannsókn er viðeigandi að gera næst?",
    "o": [
     "Tölvusneiðmynd af nýrnahettum",
@@ -469,7 +697,7 @@
    "w": "Klínísk einkenni ásamt óeðlilegu LDDST og tveimur háum kortisólgildum um miðnætti staðfesta Cushing-heilkenni. Ómælanlegt ACTH bendir til ACTH-óháðrar orsakar í nýrnahettu, þar sem hátt kortisól bælir ACTH seytingu heiladinguls. Líklegast er góðkynja kortisólseytandi æxli í nýrnahettu (adenoma), en sjaldnar krabbamein. Næsta rannsókn er því tölvusneiðmynd af nýrnahettum.\n\nCRH-örvun og HDDST eru notuð til að greina á milli heiladingulsbundinnar og rangstæðrar (ectopic) ACTH-seytingar og eiga því ekki við. Af sömu ástæðu er segulómun heiladinguls óþörf. Sólarhringsmæling á fríu kortisóli í þvagi bætir heldur engu við þar sem Cushing-heilkenni hefur þegar verið staðfest."
   },
   {
-   "c": "Undirstúka, heiladingull og nýrnahettur",
+   "c": "Nýrnahettur",
    "q": "Hörður sem er 36 ára fær tíðan höfuðverk, vægan svima, mikla svitamyndun og hefur einu sinni fallið í yfirlið. Móðir hans og móðursystir eru með kalkhækkun og amma hans lést skyndilega 46 ára af óþekktri orsök. Hann tekur engin lyf. Blóðþrýstingur er 196/124 mmHg. Engin klínísk merki eru um skjaldkirtilsröskun, Cushing-sjúkdóm eða æsavöxt. TSH er 2 mIU/L (0,2–4,5), frítt T4 14 pmol/L (9–21), leiðrétt kalsíum 2,72 mmol/L (2,2–2,6), PTH 7,2 pmol/L (1,6–6,9) og metanefrín í plasma 2687 pmol/L (< 510). Prófun á hvaða geni er líklegust til að staðfesta greininguna?",
    "o": [
     "AIRE",
@@ -482,6 +710,140 @@
     1
    ],
    "w": "Einkenni, háþrýstingur og hækkuð metanefrín benda til krómfíklaæxlis (pheochromocytoma) en hann er jafnframt með einkennalaust kalkvakaóhóf. Skyndidauði ömmunnar gæti hafa tengst háþrýstingskreppu. Um 40% krómfíklaæxla tengjast sjúkdómsvaldandi genabreytileikum. AIRE tengist fjölkirtlasjálfsofnæmi og CASR einkennalausri kalkhækkun og ekki krómfíklaæxli. MENIN veldur MEN 1 með æxlum í brisi, kalkkirtlum og heiladingli en sjaldnast krómfíklaæxli. VHL eykur hættu á krómfíklaæxli og æðaflækjuæxlum en yfirleitt ekki kalkvakaóhófi. RET veldur MEN 2a og MEN 2b, sem tengjast merggerðarkrabbameini í skjaldkirtli, krómfíklaæxli og frumkomnu kalkvakaóhófi."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "21-hydroxylasaskortur veldur yfir 90% tilfella meðfæddrar nýrnahettustækkunar (CAH).",
+   "rr": "rétt",
+   "w": "Meðfædd nýrnahettustækkun (CAH) stafar í yfir 90% tilvika af skorti á ensíminu 21-hydroxylasa."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Hvert er fyrsta skref við grun um pheochromocytoma?",
+   "o": [
+    "Staðfesta lífefnafræðilega greiningu",
+    "Skurðaðgerð tafarlaust",
+    "MIBG skann",
+    "Nýrnahettubláæðaþræðing"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Áður en leitað er staðsetningar með myndgreiningu þarf að staðfesta sjúkdóminn lífefnafræðilega."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "VMA er næmt fyrsta skimpróf við pheochromocytoma.",
+   "rr": "rangt",
+   "w": "Metanephrín í blóði eða sólarhringsþvagi eru næmari en VMA."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Hvaða mynstur styður frumkomið aldósterónheilkenni?",
+   "o": [
+    "Hátt aldósterón og bælt renín",
+    "Hátt aldósterón og hátt renín",
+    "Hátt renín og lágt natríum eingöngu",
+    "Hátt aldósterón og hátt renín ásamt hypokalemiu"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Frumkomin sjálfvirk (autonomous) framleiðsla aldósteróns bælir renín. Kalíum getur verið eðlilegt."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Eðlilegt s-kalíum útilokar ekki frumkomið aldósterónheilkenni.",
+   "rr": "rétt",
+   "w": "Þótt kalíumlækkun sé klassískt einkenni hafa margir sjúklingar (etv. allt að 40%) eðlilegt kalíumgildi í blóði."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Nýrnahettubláæðaþræðing getur hjálpað til við að greina einhliða frá tvíhliða aldósterónofframleiðslu.",
+   "rr": "rétt",
+   "w": "Þræðing nýrnahettubláæða er gullstandard til að greina hvort offramleiðsla aldósteróns sé bundin við aðra nýrnahettuna (hægt að lækna með skurðaðgerð) eða báðar."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Hvaða neysluvara getur valdið ástandi sem líkist frumkomnu aldósterónheilkenni?",
+   "o": [
+    "Lakkrís",
+    "Mjólk",
+    "Chia-grjón",
+    "Eplaedik"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Lakkrís inniheldur glycyrrhyzin sem hamlar ensíminu 11β-HSD en það brýtur niður kortisól. Hömlunin gefur kortisóli aðgang að saltsteraviðtakanum og leiðir til sýndar-aldósterónofgnóttar (Apparent Mineralocortisoid Excess: AME) með háþrýstingi og blóðkalíumlækkun."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Hver er algengasta orsök Addison sjúkdóms?",
+   "o": [
+    "Sjálfsofnæmi",
+    "Insúlínviðnám",
+    "Járnskortur",
+    "Berklar"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Addison sjúkdómur stafar í hinum vestræna heimi nú á dögum að stærstum hluta af sjálfsofnæmisferli sem eyðir berki nýrnahettanna."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Hyperpigmentation styður fremur frumkomna en afleidda (miðlæga) nýrnahettubilun.",
+   "rr": "rétt",
+   "w": "Frumkomin nýrnahettubilun veldur skorti á kortisóli (og aldósteróni) sem leiðir af sér mjög hátt ACTH. Forstig ACTH er POMC (pro-opiomelanocortin) sem er klofið í ACTH og α-MSH en ACTH sjálft getur einnig örvað MC1-viðtaka á melanocytum."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Hvaða próf er notað til að meta grun um nýrnahettubilun?",
+   "o": [
+    "Synacthen próf",
+    "Sykurþolspróf",
+    "Vatnsskerðipróf",
+    "TRH próf"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Synacthen próf (ACTH örvunarpróf) metur, með inndælingu ACTH hliðstæðu, getu nýrnahettubarkar til að framleiða kortisól."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Við samhliða nýrnahettubilun og skjaldvakabrest á að gefa T4 á undan kortisóli.",
+   "rr": "rangt",
+   "w": "Kortisólmeðferð verður að hefjast á undan skjaldkirtilshormóni þegar bæði vantar, annars getur efnaskiptahraði aukist og það steypt viðkomandi í adrenal crisis (nýrnahettufár)."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Hvaða lyf er yfirleitt aðeins nauðsynlegt í frumkominni nýrnahettubilun?",
+   "o": [
+    "Fludrocortisone",
+    "Hydrocortisone",
+    "Dexamethasone",
+    "Prednisolone"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Frumkomin nýrnahettubilun veldur skorti á kortisóli og aldósteróni, með háu ACTH, salttapi og stundum hyperpigmentation. Í miðlægri (central eða 2°) bilun skortur á ACTH og aldósterón því að öllu jöfnu varðveitt enda annað stýrikerfi."
+  },
+  {
+   "c": "Nýrnahettur",
+   "q": "Hvað skilgreinir Cushing sjúkdóm?",
+   "o": [
+    "Kortisólofgnótt vegna ACTH-myndandi heiladingulsæxlis",
+    "Öll kortisólofgnótt óháð orsök",
+    "Kortisólskortur",
+    "Aldósterónofframleiðsla"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Mikilvægt er að greina á milli Cushing heilkennis og Cushing sjúkdóms. Cushing heilkenni er samheiti yfir klínískar afleiðingar langvarandi kortisólofgnóttar, óháð orsök. Cushing-sjúkdómur er hins vegar ákveðin undirtegund þess og stafar af ACTH-seytandi æxli í heiladingli. ACTH örvar nýrnahettubörk til aukinnar kortisólframleiðslu. Því er B rangt, þar sem það lýsir Cushing heilkenni en ekki sérstaklega Cushing sjúkdómi.."
   },
   {
    "c": "Kynhormón",
@@ -563,6 +925,202 @@
    "q": "Allir ættu að horfa á \"Conclave\"",
    "rr": "rétt",
    "w": "Þessi kvikmynd gefur áhugaverða innsýn í lokað kerfi þar sem valdabarátta, mannleg samskipti og erfiðar ákvarðanir takast á. Þetta er auðvitað ekki hluti af námsefni í innkirtlafræðum en söguþráðurinn snertir meðal annars kynþroska og differences of sex development (DSD)"
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Gynaecomastia getur verið lífeðlisfræðileg á nýburaskeiði, kynþroska og við öldrun.",
+   "rr": "rétt",
+   "w": "Gynaecomastia er fjölgun kirtilvefs undir geirvörtu vegna hlutfallslegra estrógenáhrifa umfram andrógenáhrif. Kirtilvefsvöxtur í brjóstum karla getur komið fram á ákveðnum æviskeiðum vegna tímabundinna hormónabreytinga og hlutfallshækkunar estrógens Mat byggir á klínískri sögu og skoðun eins og alltaf á við en einnig er nákvæm lyfjasga mikilvæg sem og athugun mtt lifrarsjúkdóms."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Hvaða lyf er þekkt orsök gynaecomastiu?",
+   "o": [
+    "Spironolactone",
+    "Levothyroxin",
+    "Metformin",
+    "Alendronat"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Gynaecomastia er fjölgun kirtilvefs undir geirvörtu vegna hlutfallslegra estrógenáhrifa umfram andrógen áhrif. Spírónólaktón er þvagræsilyf sem virkar sem andrógenviðtakablokki og getur því valdið stækkun brjóstkirtla hjá körlum."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Hvaða rannsókn á við í uppvinnslu gynaecomastiu?",
+   "o": [
+    "hCG",
+    "Troponín",
+    "Ghrelin",
+    "Amýlasi"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Hækkað β-hCG getur bent til hCG-seytandi kímfrumuæxlis en hCG örvar LH-viðtaka og getur þannig aukið estradíólmyndun, sem leiðir til gynaecomastiu."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Stutt saga um gynaecomastiu útilokar sjálfkrafa sjálfkrafa bata.",
+   "rr": "rangt",
+   "w": "Nýtilkomin gynaecomastia sem stafar af lyfjum eða tímabundnu ástandi getur oft gengið til baka sjálfkrafa þegar orsökin er leyst."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Hvaða skoðun er mikilvæg við rannsóknir og mismunagreiningu á gynaecomastiu?",
+   "o": [
+    "Mat á stærð, þéttni og lögun eistna",
+    "Sjónsviðsskoðun",
+    "Mæling á lenda-brjóstshlutfalli (LBH)",
+    "Spirometría"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Gynaecomastia er fjölgun kirtilvefs undir geirvörtu vegna hlutfallslegra estrógenáhrifa umfram andrógenáhrif. Skoðun á eistum er nauðsynleg til að finna möguleg æxli eða smæð eistna sem tengjast undirliggjandi hormónasjúkdómum."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Hvað greinir virilism frá hirsutism?",
+   "o": [
+    "Virilism einkennist af djúpri rödd og clitoromegaly",
+    "Hirsutism tengist alltaf djúpri rödd",
+    "Virilism merkir svæsnar unglingabólur (Acne Maximus)",
+    "Enginn munur er á hugtökunum"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Hirsutism lýsir auknum hárvexti á dæmigerðum andrógenháðum húðsvæðum, en virilism felur í sér alvarlegri andrógeneinkenni eins og radddýpkun og stækkun sníps (clitoromegaly)."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Acanthosis nigricans getur verið merki um insúlínviðnám.",
+   "rr": "rétt",
+   "w": "Dökkar, flauelsskenndar húðbreytingar (acanthosis nigricans) sjást gjarnan í húðfellingum og tengjast háu insúlíni og insúlínviðnámi."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Algeng orsök hirsutism er:",
+   "o": [
+    "PCOS/PMOS",
+    "Addison-sjúkdómur",
+    "Skjaldvakabrestur eingöngu",
+    "Sykursýki af tegund 1"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Fjölblöðrueggjastokkaheilkenni (PCOS) sem nú hefur fengið nýtt nafn (Polyendocrine Metabolic Ovarian Syndrome eða PMOS) flókinn efnaskiptsjúkdómur sem er langalgengasta orsök hirsutisms og andrógenofgnóttar hjá konum á barneignaaldri."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Hvaða mæling nýtist sérstaklega við grun um andrógenofgnótt frá nýrnahettum?",
+   "o": [
+    "DHEA-S",
+    "Androstenedione",
+    "Testosterone",
+    "Kreatínkínasi"
+   ],
+   "a": [
+    0
+   ],
+   "w": "DHEA-S er nýrnahettuandrógen sem hækkar sérstaklega við æxli eða starfrænar truflanir í nýrnahettum. Androstenedione er framleitt bæði í eggjastokkum og nýrnahettum og testósterón endurspeglar frekar androgenframleiðslu frá eggjastokkum, þó nýrnahettur leggi einnig eitthvað til."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Hve stórt hlutfall testósteróns er óbundið samkvæmt efninu?",
+   "o": [
+    "2%",
+    "20%",
+    "44%",
+    "54%"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Um 98% af testósteróni í blóði er bundið próteinum (sérstaklega SHBG og albúmíni) og aðeins um 2% er óbundið. Hlutinn sem bundinn er albúmíni er þó lausbundinn og er talið sem hluti aðgengilegs testósteróns (biaoabailable testosterone eða virkt testósterón)."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Heildartestósterón eitt og sér samsvarar alltaf vefjaáhrifum testósteróns.",
+   "rr": "rangt",
+   "w": "Breytingar á próteinum sem binda testósterón (t.d. SHBG) geta gert heildartestósterón villandi, þar sem frítt testósterón ræður ríkjum um raunveruleg vefjaáhrif."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Hvaða hormón eru mæld til að flokka frumkominn (1°) og afleiddan (2°) hypogonadisma?",
+   "o": [
+    "LH og FSH",
+    "TSH og FT4",
+    "PTH og kalsíum",
+    "Inhibin og corticosterone"
+   ],
+   "a": [
+    0
+   ],
+   "w": "LH og FSH eru stýrihormón frá heiladingli sem greina á milli eistnavandamáls (frumkominn) eða heiladinguls-/undirstúkuvandamáls (miðlægur - afleiddur)."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Dægursveifla testósteróns breytist með aldri.",
+   "rr": "rétt",
+   "w": "Hjá yngri körlum er hámark testósteróns snemma á morgnana en það dregur verulega úr dægursveiflunni með hækkandi aldri."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Hvað getur verið gagnlegt þegar heildartestósterón er á gráu bili 8–12 nmol/L?",
+   "o": [
+    "Reikna frítt eða virkt testósterón",
+    "Greina hypogonadisma án frekari mats",
+    "Mæla DHEA-S testosterone hlutfall",
+    "Hefja meðferð í takt við einkenni"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Hypogonadismi er greining sem krefst samræmis einkenna og endurtekinna lágra morgungilda testósteróns. Þegar gildin eru á mörkum þess að teljast lág hjálpar útreikningur á fríu eða virku testósteróni við að meta stöðuna með nákvæmari hætti. Þetta er mikilvægt þar sem meðferð er ekki hættulaus, meðal annars vegna vegna hættu á erythrocytosis og afhjúpun eða versnun á kæfisvefni."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Hvaða þrjú einkenni voru lykilatriði við skilgreiningu late-onset hypogonadism?",
+   "o": [
+    "Stinningarvandi, minnkuð kynhvöt (hugsanir um kynlíf) og fátíð morgunstinning",
+    "Höfuðverkur, sviti og skjálfti",
+    "Þorsti, polyuria og megrun",
+    "Hósti, hiti og mæði"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Þessi þrjú einkenni reyndust sterkast tengd lágu testósteróni í European Male Ageing Study (EMAS) og urðu lykilatriði í klínískri skilgreiningu late-onset hypogonadism. Mikilvægt er að mörg önnur einkenni sem oft eru tengd testósterónskorti, svo sem þreyta, minnkaður kraftur og depurð, eru ósértæk og mjög algeng hjá eldri körlum. Greining byggir því ekki á lágu testósteróni einu sér heldur á viðeigandi einkennum ásamt endurtekið lágu morgun-testósteróni. Heimildin er Wu og félagar í grein í New England Journal of Medicine sem birtist 2010 (Identification of Late-Onset Hypogonadism in Middle-Aged and Elderly Men)."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Einkenni testósterónskorts birtast yfirleitt snögglega á nokkrum klukkustundum.",
+   "rr": "rangt",
+   "w": "Einkenni testósterónskorts þróast nánast undantekningarlaust hægt og rólega yfir lengra tímabil."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Hvaða eftirtalinna þátta stuðlar að lækkun SHBG?",
+   "o": [
+    "Vaxandi líkamsþyngd",
+    "Lág líkamsþyngd",
+    "Hátt TSH",
+    "Kalsíumskortur"
+   ],
+   "a": [
+    0
+   ],
+   "w": "SHBG (sex hormone-binding globulin) er prótein sem myndast aðallega í lifur og bindur testósterón í blóði. Offita, einkum kviðfita og insúlínviðnám, tengist lægri SHBG styrk. Við lækkun SHBG getur heildartestósterón því mælst lágt án þess að frítt testósterón lækki í sama mæli. Þetta er mikilvægt við mat á hypogonadisma hjá körlum með offitu eða efnaskiptavillu."
+  },
+  {
+   "c": "Kynhormón",
+   "q": "Testósterónmeðferð getur tengst blóðríki og þarf því eftirlit.",
+   "rr": "rétt",
+   "w": "Testósterón örvar myndun rauðra blóðkorna og testósterón meðferð getur því valdið hækkun á hemóglóbíni og hematókrít. Þess vegna er mikilvægt að mæla hematókrít fyrir og meðan á meðferð stendur. Ef hematókrít hækkar verulega þarf að endurmeta skammt og meðferð, þar sem aukin seigja blóðs getur aukið hættu á segatengdum fylgikvillum."
   },
   {
    "c": "Sykursýki",
@@ -1049,6 +1607,222 @@
    "w": "Um er að ræða bráða stóra aðgerð, ófullnægjandi sykurstjórnun og föstu sem nær yfir fleiri en eina máltíð. Því á að leggja hana inn fyrir aðgerð og hefja insúlíndreypi með breytilegum hraða (VRII)."
   },
   {
+   "c": "Sykursýki",
+   "q": "Hverjir eru helstu smáæðafylgikvillar sykursýki?",
+   "o": [
+    "Sjónukvilli, taugakvilli og nýrnamein",
+    "Hjartadrep, slag og útæðasjúkdómur",
+    "Astmi, COPD og lungnabólga",
+    "Lifrarsjúkdómur, gallsteinar og brisbólga"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Langvinn hyperglycemia skaðar smáæðar sem veldur sjónukvilla, nýrnameini og taugakvilla. Skimun með reglubundinni augnbotnamyndatöku, fótaskoðun og albúmín/kreatínín-hlutfalli í þvagi er mikilvæg og getur greint sjónukvilla og nýrnamein áður en einkenni koma fram. Fótasár verða oft til við samspil skyntaugakvilla, þrýstings, aflögunar og blóðþurrðar."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Góð blóðsykurstjórn dregur úr smáæðafylgikvillum.",
+   "rr": "rétt",
+   "w": "Góð og stöðug stjórn á blóðsykri er besta vörnin gegn tilurð og framgangi smáæðasjúkdóma af völdum sykursýki."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Hvaða mæling er notuð til að skima fyrir nýrnameini?",
+   "o": [
+    "Albúmín/kreatínín-hlutfall í þvagi",
+    "eGFR",
+    "ketónar í þvagi",
+    "Renín/kreatínín hlutfall"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Mæling á og albúmín/kreatínín-hlutfalli í þvagi er næmt skimunarpróf fyrir nýrnameini og verður óeðlilegt löngu áður en eGFR eða kreatínín breytist."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Fótamein í sykursýki geta verið blanda af stóræðasjúkdómi, smáæðasjúkdómi og taugakvilla.",
+   "rr": "rétt",
+   "w": "Fótasár verða oftast til við samspil skyntaugakvilla, þrýstings, aflögunar og blóðþurrðar. Skert skyn veldur því að sjúklingur finnur ekki fyrir þrýstingi, viðkomandi fær smásár sem svo er hætt við sýkingum."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Hvaða lyfjaflokkur er sérstaklega nefndur í blóðþrýstingsmeðferð við sykursýkinýrnameini?",
+   "o": [
+    "ACE-hemill eða ARB",
+    "Sýklalyf",
+    "Bisfosfónat",
+    "Thionamíð"
+   ],
+   "a": [
+    0
+   ],
+   "w": "ACE-hemlar eða ARB-lyf draga úr þrýstingi í háræðum gaukla og hægja þannig á próteinmigu og seinka tilurð og framgangi nýrnameins. Oftast þarf þó margar tegundir lyfja til að ná tökum á blóðþrýstingnum sem er ekki síður mikilvægt en tegund lyfjanna."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Hvaða einkenni er neuroglycopenískt?",
+   "o": [
+    "Rugl",
+    "Sviti",
+    "Skjálfti",
+    "Hjartsláttur"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Neuroglycopenísk einkenni stafa af glúkósaskorti í heila. Dæmigerð eru einbeitingarerfiðleikar, rugl, hegðunarbreytingar, syfja, sjóntruflanir, taltruflanir, krampar og meðvitundarleysi. Þau eru frábrugðin adrenergískum einkennum hypoglycemiu, svo sem skjálfta, hjartsláttarónotum, svita, hungri og kvíðatilfinningu."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Fólk með sykursýki af tegund 1 má aldrei vera alveg án insúlíns.",
+   "rr": "rétt",
+   "w": "Sjúklingar með tegund 1 sykursýki skorta eigin insúlínframleiðslu algjörlega og þurfa stöðugt að fá insúlín til að koma í veg fyrir lífshættulega ketónsýringu."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Hvaða niðurstaða styður DKA?",
+   "o": [
+    "Blóðketónar > 3 mmol/L og bíkarbónat < 15 mmol/L",
+    "Osmólalitet <280 og blóðketónar á bilinu 1,6 – 2,0 mmol/L",
+    "Bíkarbónat >30 mmol/L",
+    "Fastandi glúkósi > 15 mmol/L og pH 7,9"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Við DKA (diabetic ketoacidosis) veldur insúlínskortur auknu niðurbroti fitu og myndun ketóna, einkum β-hýdroxýbútýrats. Ketónarnir safnast upp og valda metabólískri acidósu, sem birtist með lækkuðu pH og lækkuðu bíkarbónati. Því styður samsetning verulegrar ketónhækkunar og lágs bíkarbónats eindregið DKA. Hár blóðsykur styður greininguna en er ekki nauðsynlegt skilmerki þar sem euglycemic DKA getur komið fyrir, sérstaklega við notkun SGLT2-hemla. Hátt bíkarbónat eða pH 7,9 samræmist hins vegar ekki ketoacidosis"
+  },
+  {
+   "c": "Sykursýki",
+   "q": "HHS einkennist oft af verulegri hyperglycemiu og s-osmólaliteti >320 mOsm/kg.",
+   "rr": "rétt",
+   "w": "HHS (hyperosmolar hyperglycemic state) einkennist af mjög mikilli hyperglycemiu (jafnvel >50), verulegri vökvaþurrð og hyperosmólaliteti, gjarnan með s-osmólalitet >320 mOsm/kg. Insúlínskorturinn er yfirleitt ekki jafn alger og í DKA, þannig að nægilegt insúlín er oft til staðar til að hamla verulegri ketónmyndun, þótt það dugi ekki til að koma í veg fyrir mikla hækkun blóðsykurs. Osmótísk diuresa leiðir síðan til mikils vökva- og elektrólýtataps og hækkandi osmólalítets. Taugafræðileg einkenni, svo sem rugl, syfja, krampar eða skert meðvitund, verða áberandi eftir því sem hyperosmólalitetið eykst. Þetta aðgreinir HHS frá DKA, þar sem ketósa og metabólísk acidosis eru meginatriði."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Hvert er fyrsta meginatriði í upphafsmeðferð DKA/HHS eftir ABC-mat?",
+   "o": [
+    "Vökvameðferð",
+    "Setja upp kalíumdreypi",
+    "Gefa bíkarbónat",
+    "Gefa insúlín bolus"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Bæði við DKA og HHS er yfirleitt verulegur vökvaskortur vegna osmótískrar þvagræsingar. Eftir ABC-mat er því fyrsta meginatriðið að hefja vökvagjöf í æð sem eykur blóðrúmmál og bætir nýrnaperfusion. Blóðsykur lækkar einnig við einfalda þynningu. Insúlín er síðan gefið í dreypi (síður en bolus) samkvæmt skipulagðri meðferðaráætlun og jafnframt þarf að fylgjast sérstaklega með kalíumgildi, þar sem insúlín flytur kalíum inn í frumur og getur valdið hættulegri blóðkalíumlækkun. Insúlíngjöf hefst því ekki fyrr en búið er að útiloka alvarlega hypokalemiu með mælingu. Ákefð kalíumgjafar fer síðan eftir mældu s-kalíum. Bíkarbónat er ekki hefðbundin upphafsmeðferð og kemur aðeins til greina við mjög alvarlega sýringu (acidósu)."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "SGLT2-hemlar geta tengst DKA, stundum án mjög mikillar blóðsykurshækkunar.",
+   "rr": "rétt",
+   "w": "SGLT2-hemlar geta valdið euglycemic DKA vegna þess að þeir minnka endurupptöku glúkósa í nýrum og auka þannig útskilnað glúkósa með þvagi. Blóðsykur hækkar því minna en ella og aukin hyperglycemia örvar síður insúlínseytingu. Samhliða verður hlutfallslega minna insúlín og meira glúkagon, sem virkjar lipolysu í fituvef. Fríar fitusýrur berast til lifrar þar sem þær umbreytast í ketóna. Uppsöfnun ketóna leiðir síðan til metabólískrar acidosu. Þannig getur sjúklingur verið með alvarlega ketónblóðsýringu þótt blóðsykur sé aðeins vægt eða miðlungs hækkaður. Þetta er sérstaklega mikilvægt við föstu, bráð veikindi, skurðaðgerðir."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Hvaða HbA1c-gildi er nefnt jafngilt greiningu sykursýki?",
+   "o": [
+    "48 mmol/mol (6,5%)",
+    "35 mmol/mol (5,4%)",
+    "42 mmol/mol (6,0%)",
+    "70 mmol/mol (8,6%)"
+   ],
+   "a": [
+    0
+   ],
+   "w": "HbA1c-gildi upp á 48 mmol/mol (6,5%) eða meira er alþjóðlegt viðmið til greiningar sykursýki."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "HbA1c endurspeglar blóðsykurstjórn undanfarna 2–3 mánuði.",
+   "rr": "rétt",
+   "w": "HbA1c endurspeglar meðalblóðsykur síðustu 2–3 mánaða vegna þess að glúkósi binst óafturkræft við hemóglóbín í rauðum blóðkornum, svokölluð glycation. Því hærri sem blóðsykurinn er, því meira hemóglóbín verður sykrað. Rauð blóðkorn lifa að meðaltali í um 120 daga, þannig að HbA1c gefur samþætta mynd af blóðsykri yfir líftíma þeirra, þó síðustu vikurnar vegi meira en eldri gildi vegna stöðugrar endurnýjunar rauðkorna. HbA1c getur því verið villandi þegar líftími rauðra blóðkorna er óeðlilegur, til dæmis við blóðmissi, hemólýsu, nýlega blóðgjöf eða suma blóðsjúkdóma."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Hvert eftirtalinna atriða benda til MODY?",
+   "o": [
+    "Ungur, grannur einstaklingur, engin mótefni og ríkjandi erfðir",
+    "Ketósa og jákvæð mótefni",
+    "Greining eftir 80 ára aldur",
+    "Bráð nýrnabilun"
+   ],
+   "a": [
+    0
+   ],
+   "w": "MODY (Maturity-Onset Diabetes of the Young) er eingena sykursýki, þ.e. stafar af breytingu í einu geni sem hefur áhrif á starfsemi beta-frumna og insúlínseytingu. Hún erfist autosómalt ríkjandi, þannig að sykursýki sést gjarnan í mörgum kynslóðum sömu fjölskyldu. Greining verður oft á unga aldri og einstaklingarnir eru gjarnan grannir og án áberandi insúlínviðnáms. Ólíkt sykursýki af tegund 1 eru sjálfsofnæmismótefni, svo sem GAD65, yfirleitt neikvæð, og eigin insúlínframleiðsla er oft varðveitt. Mikilvægt er að þekkja MODY þar sem undirgerðin, til dæmis GCK-MODY eða HNF1A-MODY, getur haft veruleg áhrif á meðferð og þörf fyrir lyf."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Offita er nefnd sterkasti breytanlegi áhættuþáttur sykursýki af tegund 2.",
+   "rr": "rétt",
+   "w": "Offita, einkum kviðfita, er einn sterkasti breytanlegi áhættuþátturinn fyrir sykursýki af tegund 2. Aukinn fitumassi veldur meðal annars auknum styrk frírra fitusýra og breytingum á boðefnum frá fituvef sem stuðla að insúlínviðnámi í lifur, vöðvum og fituvef. Brisið bregst fyrst við með aukinni insúlínseytingu, en hjá einstaklingum með undirliggjandi erfðafræðilega áhættu geta beta-frumurnar smám saman ekki lengur mætt þessari auknu þörf. Þá hækkar blóðsykur og sykursýki af tegund 2 kemur í ljós. Þyngdartap og aukin hreyfing draga úr insúlínviðnámi og geta því verulega minnkað áhættu á þróun sjúkdómsins."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Hvaða fastandi s-glúkósagildi styður greiningu sykursýki?",
+   "o": [
+    "≥ 7,0 mmol/L",
+    "< 5,0 mmol/L",
+    "5,5 – 6,5 mmol/L",
+    "≥ 6,0 mmol/L"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Fastandi s-glúkósi ≥7,0 mmol/L (fasta merkir að engin hitaeiningainntaka í a.m.k. 8 klukkustundir) skilgreinir sykursýki. Hjá einstaklingi án dæmigerðra einkenna hyperglycemiu þarf almennt að staðfesta óeðlilega niðurstöðu með endurtekinni mælingu eða öðru greiningarprófi, til dæmis HbA1c. Gildi undir þessum mörkum útiloka þó ekki sykursýki, þar sem einnig má greina hana með HbA1c ≥ 48 mmol/mol."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Markmið sykurstjórnar eiga að vera einstaklingsmiðuð.",
+   "rr": "rétt",
+   "w": "Ávinningur og áhætta af strangri blóðsykurstjórn eru mismunandi milli einstaklinga. Hjá mörgum fullorðnum er miðað við HbA1c <7% (53 mmol/mol), en markmiðið getur verið lægra hjá ungum og hraustum einstaklingum ef því má ná án marktækrar hypoglycemiu. Hjá öldruðum, veikburða einstaklingum, þeim sem hafa langvarandi sykursýki eða mikla hættu á hypoglycemiu getur verið rétt að hafa rýmra HbA1c markmið. Við ákvörðun markmiðs þarf því meðal annars að taka mið af aldri, fylgikvillum, lífslíkum, hættu á hypoglycemiu, meðferð og óskum einstaklingsins. Markmiðið er ekki einfaldlega „sem lægst HbA1c“, heldur besta jafnvægið milli langtímaávinnings og áhættu meðferðar."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Hvaða insúlín er notað í insúlíndælur?",
+   "o": [
+    "Eingöngu hraðvirkt insúlín",
+    "Eingöngu langvirkt insúlín",
+    "Blanda af NPH og hraðvirku",
+    "Degludec"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Insúlíndælur dæla stöðugt örlitlum skammti af hraðvirku insúlíni undir húð, sem líkir eftir basal insúlíni (grunnþörf) og síðan eru gefnir aukaskammtar við máltíðir (bolus)."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Hver er hornsteinn meðferðar sykursýki af tegund 2?",
+   "o": [
+    "Lífsstílsmeðferð og fræðsla",
+    "Skurðaðgerð",
+    "Metformín",
+    "GLP-1 hliðstæða"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Hornsteinn meðferðar sykursýki af tegund 2 er fræðsla, hollt mataræði, regluleg hreyfing, þyngdarstjórnun og stuðningur við varanlegar lífsstílsbreytingar, enda geta þessir þættir bætt insúlínnæmi og blóðsykurstjórn og haft jákvæð áhrif á aðra áhættuþætti hjarta- og æðasjúkdóma. Lyfjameðferð er síðan einstaklingsmiðuð. Metformín er mikilvægt og algengt lyf, en er ekki lengur sjálfkrafa fyrsta lyfið hjá öllum. Til dæmis geta GLP-1 hliðstæður eða SGLT2 hemlar verið sérstaklega mikilvægir þegar offita, hjarta- og æðasjúkdómur, hjartabilun eða langvinnur nýrnasjúkdómur er til staðar. Lífsstílsmeðferð og fræðsla eru hins vegar grunnurinn sem önnur meðferð byggir á."
+  },
+  {
+   "c": "Sykursýki",
+   "q": "Hver er tilgangur basal-bolus insúlínmeðferðar?",
+   "o": [
+    "Að líkja eftir eðlilegri insúlínseytingu briskirtilsins",
+    "Að einfalda meðferð",
+    "Að gefa insúlín með mat",
+    "Að meðhöndla fylgikvilla"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Tilgangur basal-bolus insúlínmeðferðar er að líkja sem best eftir eðlilegri insúlínseytingu briskirtilsins. Basal eða grunn insúlín er langverkandi insúlín sem veitir stöðugan grunn milli máltíða og yfir nótt og hamlar meðal annars glúkósaframleiðslu lifrar. Bolus insúlín er hraðvirkt insúlín sem gefið er með máltíðum og má einnig nota til leiðréttingar á háum blóðsykri milli mála. Meðferðin gerir þannig kleift að aðlaga máltíðainsúlín að kolvetnainntöku, blóðsykri og aðstæðum hverju sinni, en viðhalda jafnframt stöðugri grunnþörf insúlíns. Þetta er meginform insúlínmeðferðar við sykursýki af tegund 1."
+  },
+  {
    "c": "Blóðfita",
    "q": "Takist vel til með lífsstílsbreytingar hjá fólki með sykursýki af tegund 2 fækkar hjarta- og æðaáföllum",
    "rr": "rangt",
@@ -1085,6 +1859,66 @@
    "q": "Mikilvægt er að lækka þríglyceríða hjá sykursjúkum til þess að fækka hjartaáföllum",
    "rr": "rangt",
    "w": "Hækkuð þríglýseríð tengjast aukinni hjarta- og æðaáhættu, en ekki hefur almennt verið sýnt að það eitt að lækka þríglýseríð fækki hjartaáföllum hjá fólki með sykursýki. Við forvarnir hjarta- og æðasjúkdóma er áherslan fyrst og fremst á LDL-lækkun með statínum og heildstæða stjórnun áhættuþátta. Mjög há þríglýseríð eru hins vegar sérstakt meðferðarmarkmið, meðal annars vegna hættu á bráðri brisbólgu"
+  },
+  {
+   "c": "Blóðfita",
+   "q": "Hvaða lípóprótein er helsti burðaraðili kólesteróls í plasma og tengist hvað sterkast æðakölkun?",
+   "o": [
+    "Kýlómíkrón",
+    "VLDL",
+    "LDL",
+    "HDL"
+   ],
+   "a": [
+    2
+   ],
+   "w": "LDL flytur stærstan hluta kólesteróls í plasma og er meginlípópróteinið sem tengist myndun æðakölkunar. Oxað LDL er sérstaklega æðakölkunarhvetjandi. Hver LDL-ögn inniheldur eina apoB-100 sameind, þannig að apoB getur gefið mat á fjölda æðakölkunarvaldandi agna."
+  },
+  {
+   "c": "Blóðfita",
+   "q": "Tvöföldun statínskammts leiðir að jafnaði til um 6% viðbótarlækkunar á LDL-kólesteróli.",
+   "rr": "rétt",
+   "w": "Þetta er stundum kallað „6% reglan“. Eftir upphaflega LDL lækkun með statíni gefur tvöföldun skammts yfirleitt aðeins um 6% viðbótarlækkun. Ef markmið næst ekki getur því verið áhrifaríkara að velja öflugra statín eða bæta öðru lyfi, svo sem ezetimíbi, við meðferðina."
+  },
+  {
+   "c": "Blóðfita",
+   "q": "Hvaða lyf hindrar upptöku kólesteróls úr þarmi og lækkar LDL-kólesteról gjarnant um 15–20%?",
+   "o": [
+    "Ezetimíb",
+    "Gemfíbrózíl",
+    "Icosapent ethyl",
+    "Evolocumab"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Ezetimíb hamlar frásogi kólesteróls úr þörmum og dregur þannig úr kólesterólflæði til lifrar. Við það eykst upptaka lifrar á LDL úr blóði. Lyfið lækkar LDL-kólesteról oft um 15–20% og er gjarnan notað með statíni þegar LDL-markmiði er ekki náð eða statínskammtur takmarkast af aukaverkunum."
+  },
+  {
+   "c": "Blóðfita",
+   "q": "Eðlilegur kreatínkínasi (CK) þýðir að vöðvaverkir tengjast ekki notkun statíns",
+   "rr": "rangt",
+   "w": "Þó sjaldgæf sé, er algengasta mynd statíntengdra vöðvaeinkenna verkur, stirðleiki eða máttleysi án marktækrar CK-hækkunar. Einkenni hefjast oft vikum eða mánuðum eftir upphaf meðferðar og ganga yfirleitt til baka eftir að lyfið er stöðvað."
+  },
+  {
+   "c": "Blóðfita",
+   "q": "Hvaða gildi þríglyseríða telst mjög hátt og tengist aukinni hættu á brisbólgu?",
+   "o": [
+    "≥ 1,0 mmol/L",
+    "≥ 1,7 mmol/L",
+    "≥ 3,0 mmol/L",
+    "≥ 5,6 mmol/L"
+   ],
+   "a": [
+    3
+   ],
+   "w": "Mjög há þríglyseríð, að minnsta kosti 5,6 mmol/L, tengjast aukinni hættu á brisbólgu og áhættan eykst verulega þegar gildi fara yfir um 11 mmol/L. Mögulegar undirliggjandi orsakir eru til dæmis illa meðhöndluð sykursýki, vanstarfsemi skjaldkirtils og mikil áfengisnotkun."
+  },
+  {
+   "c": "Blóðfita",
+   "q": "Efnaskiptavilla einkennist gjarnan af háum VLDL þríglyseríðum, lágu HDL og litlum, þéttum LDL ögnum.",
+   "rr": "rétt",
+   "w": "Efnaskiptavilla og insúlínviðnám leiða til aukins flæðis frírra fitusýra til lifrar og aukinnar framleiðslu á VLDL, sem hækkar þríglýseríð. Minnkuð virkni lípópróteinlípasa hægir jafnframt á hreinsun þríglyseríða. Samhliða verður breyting á efnaskiptum HDL og LDL þannig að HDL lækkar og hlutfall lítilla, þéttra LDL agna eykst. Þetta er dæmigerður blóðfituspegill sykursýki af tegund 2 og efnaskiptavillu."
   },
   {
    "c": "Beinþynning",
@@ -1208,6 +2042,262 @@
     4
    ],
    "w": "Dánarhlutfall er hátt eftir mjaðmarbrot. Hér eru afstæðar frábendingar mtt ALN. Það er ágætt að hafa grunnmælingu á beinþéttni. Aðalatriði er þó að meðhöndla."
+  },
+  {
+   "c": "Beinþynning",
+   "q": "Ráðlagður daglegur forvarnarskammtur fullorðinna af D-vítamíni er 15–20 µg/d",
+   "rr": "rétt",
+   "w": "D-vítamín stuðlar að frásogi kalsíums og steinefnamyndun beina. Forvarnarskammtur miðast við aldur, mataræði, sólarljós. Meðferð staðfests skorts er annað mál sem krefst stundum stærri skammta tímabundið. Fullyrðingin er því rétt. https://island.is/d-vitamin"
+  },
+  {
+   "c": "Beinþynning",
+   "q": "Hvaða lyf er almennt fyrsta val við beinþynningu?",
+   "o": [
+    "Denosúmab",
+    "Alendrónat",
+    "Teriparatíð",
+    "Romosozumab"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Af valkostunum samræmist „B. Alendrónat“ best klínískum rannsóknum og reynslu og er einnig hagkvæmt fyrir þjóðfélagið."
+  },
+  {
+   "c": "Beinþynning",
+   "q": "Stöðug háskammta PTH-gjöf hefur anabólísk áhrif á bein.",
+   "rr": "rangt",
+   "w": "Áhrif PTH á bein ráðast af mynstri meðferðar. Stöðugt hækkað PTH eykur RANKL-miðlaða beinresorption, en stuttir daglegir púlsar örva osteoblasta og haft anabólísk áhrif. Þetta skýrir bæði beinsjúkdóm í kalkvakaóhófi og notkun PTH-hliðstæðna við alvarlegri beinþynningu."
+  },
+  {
+   "c": "Beinþynning",
+   "q": "Hvaða fullyrðing um denosúmab er rétt?",
+   "o": [
+    "Það hermir eftir osteoprotegeríni og hamlar þroska forvera osteoklasta",
+    "Það örvar osteoklasta beint",
+    "Það er bisfosfónat",
+    "Það má stöðva skyndilega án meðferðarlokaáætlunar"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Denosúmab er einstofna mótefni gegn RANKL og dregur þannig úr myndun og virkni osteoklasta. Áhrifin ganga tiltölulega hratt til baka þegar gjöf er hætt; þá getur orðið snögg aukning beinumsetningu, beintap og hætta á beinþynningarbrotum eykst aftur. Því þarf fyrirfram ákveðna meðferðarlokaáætlun (e. exit startegy) sem oft er þá bisfosfónat."
+  },
+  {
+   "c": "Beinþynning",
+   "q": "Hvenær ætti læknir að íhuga beinverndandi meðferð sérstaklega hjá fullorðnum?",
+   "o": [
+    "T-gildi ≤ −2,5",
+    "T-gildi +1,0",
+    "Aðeins ef Z-gildi er yfir 0",
+    "Aðeins eftir háorkuáverka og brot"
+   ],
+   "a": [
+    0
+   ],
+   "w": "T-gildi upp á −2,5 eða lægra skilgreinir beinþynningu samkvæmt DXA-mælingu og kallar á íhlutun til að draga úr brotaáhættu. https://jamanetwork.com/journals/jama/fullarticle/2685995"
+  },
+  {
+   "c": "Beinþynning",
+   "q": "Hvaða vandamál getur komið fram ef denosúmab er stöðvað án viðeigandi framhaldsmeðferðar?",
+   "o": [
+    "Hratt beintap og aukin hætta á hryggbrotum",
+    "Varanleg hyperkalsemía hjá öllum",
+    "Aukin beinmyndun í mörg ár eftir meðferðarlok",
+    "Engin breyting á beinumsetningu"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Denosúmab er einstofna mótefni gegn RANKL og dregur þannig úr myndun og virkni osteoklasta. Áhrifin ganga tiltölulega hratt til baka þegar gjöf er hætt; þá getur orðið snögg aukning beinumsetningar og beintap. Því þarf fyrirfram ákveðna meðferðarlokaáætlun og framhaldsmeðferð (skipta yfir í bisfosfónat)."
+  },
+  {
+   "c": "Beinþynning",
+   "q": "Beinþynning er einkennalaus þar til beinbrot verður.",
+   "rr": "rétt",
+   "w": "Beinþynning þróast hægt og hljóðlega án einkenna þar til veikleiki beinanna leiðir til brots, oft við minnsta hnjask."
+  },
+  {
+   "c": "Beinþynning",
+   "q": "Hvaða jafna lýsir einfölduðu líkani beinþynningarbrots?",
+   "o": [
+    "Brot = fall + lágur beinmassi (BMD) + léleg beingæði",
+    "Brot = aldur − BMD",
+    "Brot = kalkinntaka + hreyfing",
+    "Brot = hormónaskortur x þyngd"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Hætta á beinbroti stafar af samspili falls, lágrar beinþéttni (BMD) og skertra beingæða."
+  },
+  {
+   "c": "Beinþynning",
+   "q": "Mjaðmarbrot geta aukið bæði færniskerðingu og dánarlíkur.",
+   "rr": "rétt",
+   "w": "Mjaðmarbrot eru alvarlegur atburður hjá öldruðum sem rannsóknir hafa sýnt að skerðir sjálfstæði og færni til muna en að auki fylgir umtalsverð aukning á dánartíðni sem draga má úr með bisfosfonat meðferð."
+  },
+  {
+   "c": "Beinþynning",
+   "q": "Hvaða rannsókn er heppilegust til að mæla beinþéttni?",
+   "o": [
+    "DXA",
+    "PET",
+    "Ómun af hælbeini",
+    "Röntgenmynd af hrygg"
+   ],
+   "a": [
+    0
+   ],
+   "w": "DXA (Dual Energy X-ray Absorptiometry) notar lágskammta röntgengeisla til að meta beinþéttni og er staðlaða aðferðin. Þetta er oftast tjáð fyrir mjöðm og lendhrygg. T-gildi miðar við ungan viðmiðunarhóp og er notað til skilgreiningar á beinþynningu (T = -2,5 eða verra) hjá konum eftir tíðahvörf og hjá eldri körlum; Z-gildi miðar gildi við jafnaldra og hjálpar við mat á óvenju lágum beinmassa sem ætti að kalla á frekari rannsóknir ef gildi víkur meira en 2 SD frá meðaltali. Z-gildi er notar til að túlka beinþéttni hjá yngra fólki."
+  },
+  {
+   "c": "Beinþynning",
+   "q": "Z-gildi ber beinþéttni saman við jafnaldra viðmið.",
+   "rr": "rétt",
+   "w": "Z-gildi ber sjúkling saman við jafnaldra, en T-gildi ber saman við heilbrigðan, ungan einstakling á hápunkti beinmassans."
+  },
+  {
+   "c": "Beinþynning",
+   "q": "Hvaða gildi er notað til að skilgreina beingisnun og beinþynningu?",
+   "o": [
+    "Z-gildi eingöngu",
+    "T-gildi",
+    "FRAX eingöngu",
+    "Kalsíumgildi"
+   ],
+   "a": [
+    1
+   ],
+   "w": "T-gildi er notað til greiningar á beingisnun og beinþynningu hjá konum eftir tíðahvörf og eldri körlum."
+  },
+  {
+   "c": "Beinþynning",
+   "q": "Með sértækri lyfjameðferð má almennt búast við marktækri breytingu á beinþéttni innan sex mánaða.",
+   "rr": "rangt",
+   "w": "Beinvefur endurnýjar sig hægt og það tekur venjulega amk 2 ár að sjá marktæka breytingu á beinþéttni við endurtekna DXA-mælingu."
+  },
+  {
+   "c": "Beinþynning",
+   "q": "Hvaða matstæki sameinar klíníska áhættuþætti til að áætla 10 ára brotaáhættu?",
+   "o": [
+    "FRAX",
+    "APGAR",
+    "CHA₂DS₂-VASc",
+    "Wells skilmerki"
+   ],
+   "a": [
+    0
+   ],
+   "w": "FRAX-reiknivélin metur 10 ára líkur á alvarlegum beinbrotum út frá klínískum áhættuþáttum og getur einnig tekið í reikninginn beinþéttni samkvæmt DXA mælingu."
+  },
+  {
+   "c": "Offita",
+   "q": "Offita er best skilgreind sem afleiðing langvarandi skorts á viljastyrk og óhóflegrar kaloríuneyslu",
+   "rr": "rangt",
+   "w": "Offita er langvinnur, flókinn sjúkdómur sem einkennist af bakslögum og tímabilum bata. Líffræðilegir, erfðafræðilegir, félagslegir, umhverfis- og atferlisþættir hafa áhrif. Mat og meðferð eiga því ekki að byggjast á þeirri einföldun að vandinn sé skortur á viljastyrk eða ofáti."
+  },
+  {
+   "c": "Offita",
+   "q": "Sigga er 45 ára kona sem er með líkamsþyngdarstuðul 34 kg/m². Hvert eftirfarandi lýsir best klínísku mati á offitu?",
+   "o": [
+    "Líkamsþyngdarstuðull einn nægir til að meta alvarleika sjúkdómsins",
+    "Nota skal líkamsþyngd en ekki mittismál",
+    "Meta þarf m.a. fitudreifingu, fylgisjúkdóma, andlega heilsu og færni auk BMI",
+    "Allir með sama líkamsþyngdarstuðul hafa sambærilega heilsufarsáhættu"
+   ],
+   "a": [
+    2
+   ],
+   "w": "Líkamsþyngdarstuðull (BMI) er gagnlegt skimunarmælitæki en einn gefur hann ekki fullnægjandi mynd af sjúkdómsbyrði. Mittismál eða mittismál/líkamshæð, fylgisjúkdómar, geðheilsa, virkni og lyfjasaga bæta klíníska áhættumatið."
+  },
+  {
+   "c": "Offita",
+   "q": "Þyngdartap veldur lífeðlisfræðilegum breytingum sem geta ýtt undir aukna matarlyst og þannig stuðlað að þyngdaraukningu á ný.",
+   "rr": "rétt",
+   "w": "Eftir þyngdartap virkjast miðlæg “mótstýrikerfi” sem vinna gegn áframhaldandi þyngdartapi. Meðal annars lækkar sedduhormónið leptín og svengdarhormónið ghrelín hækkar, sem eykur svengdartilfinningu og dregur úr orkunotkun. Þetta getur að hluta skýrt bakslög á borð við þyngdaraukningu eða stöðnun og sýnir fram á þörf fyrir langtímameðferð."
+  },
+  {
+   "c": "Offita",
+   "q": "Hvert eftirfarandi lyf getur stuðlað að þyngdaraukningu og ætti því sérstaklega að hafa í huga við uppvinnslu einstaklings með offitu?",
+   "o": [
+    "Insúlín",
+    "Semaglutide",
+    "Tirzepatide",
+    "Orlistat"
+   ],
+   "a": [
+    0
+   ],
+   "w": "Lyfjasaga er mikilvægur hluti uppvinnslu offitu. Insúlín getur stuðlað að þyngdaraukningu. Sama getur átt við um sykurstera, sum geðlyf (sérstaklega lyf gegn geðrofi og sum þunglyndislyf) og sum flogaveikilyf. Þetta útilokar ekki notkun lyfjanna þegar skýr ábending er fyrir hendi, en áhrifin eiga að vera hluti af heildarmati."
+  },
+  {
+   "c": "Offita",
+   "q": "Til þess að offitumeðferð teljist árangursrík þarf einstaklingur almennt að ná kjörþyngd.",
+   "rr": "rangt",
+   "w": "Markmið meðferðar er að bæta heilsu, starfshæfni og lífsgæði og draga úr fylgikvillum, ekki endilega að ná fyrirfram skilgreindri kjörþyngd. Um 5% þyngdartap getur bætt ýmsa hjarta- og efnaskiptaáhættuþætti til muna, en markmið eru alltaf einstaklingsbundin."
+  },
+  {
+   "c": "Offita",
+   "q": "52 ára maður er með offitu og háþrýsting. Hvert eftirfarandi er heppilegasta fyrsta nálgun við meðferð?",
+   "o": [
+    "Velja ákveðinn megrunarkúr og setja 25% þyngdartap sem fyrsta markmið",
+    "Hanna einstaklingsmiðaða áætlun sem tekur til næringar, hreyfingar, fylgisjúkdóma og annarra viðeigandi þátta",
+    "Hefja lyfjameðferð án frekara mats",
+    "Vísa beint í efnaskiptaaðgerð"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Offitumeðferð er einstaklingsmiðuð og fjölþætt. Meta þarf meðal annars næringu, hreyfingu, svefn, andlega líðan, félagslega þætti, lyf og fylgisjúkdóma. Meðferð getur síðan falist í faglega studdum lífsstílsbreytingum, lyfjum, efnaskiptaaðgerð eða samsetningu úrræða."
+  },
+  {
+   "c": "Offita",
+   "q": "GLP-1 hliðstæður viðtakaörvar geta verið hluti langtímameðferðar við offitu en eiga ekki að koma í stað heildrænnar offitumeðferðar.",
+   "rr": "rétt",
+   "w": "GLP-1 hliðstæður geta leitt til klínískt marktæks þyngdartaps og hagfelldari efnaskiptaspegils. Þar sem um er að ræða langvinnan sjúkdóm getur verið þörf á langtímameðferð. Lyfjameðferð á að vera hluti af samþættri heildaráætlun til lengri tíma sem tekur einnig til næringar, hreyfingar, hegðunar, fylgisjúkdóma og tekur tillit til mögulegra aukaverkana og óska einstaklingsins."
+  },
+  {
+   "c": "Offita",
+   "q": "Hvaða lífeðlisfræðilegu áhrif eru einkennandi fyrir GLP-1 og eiga þátt í áhrifum GLP-1 hliðstæðna á líkamsþyngd?",
+   "o": [
+    "Aukin svengd og hraðari magatæming",
+    "Minnkuð sedda og aukin fæðuinntaka",
+    "Aukin sedda og minni fæðuinntaka",
+    "Aukin leptínframleiðsla er eina verkun lyfjanna"
+   ],
+   "a": [
+    2
+   ],
+   "w": "GLP-1 tekur þátt í stjórnun seddu og fæðuinntöku með samspili meltingarvegar og miðtaugakerfis. GLP-1 hliðstæður auka seddu, draga úr orkuinntöku og hægja einnig á magatæmingu. Verkun þeirra skýrist ekki eingöngu af breytingum á leptíni."
+  },
+  {
+   "c": "Offita",
+   "q": "Sveinn er 48 ára og er með líkamsþyngdarstuðul 28 kg/m² en verulega kviðfitu. Hvaða viðbótarmæling er sérstaklega gagnleg til að meta miðlæga fitusöfnun?",
+   "o": [
+    "Höfuðummál",
+    "Mittismál eða hlutfall mittismáls og líkamshæðar",
+    "Ummál upphandleggs eitt og sér",
+    "Ekki er þörf á frekari mælingum"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Líkamsþyngdarstuðull (BMI) gefur ekki upplýsingar um fitudreifingu eða hlutfall vöðva- og fitumassa. Mittismál sem og hlutfall mittismáls og líkamshæðar eru gagnleg tól til að meta miðlæga (kviðlæga) fitusöfnun, sem tengist aukinni hjarta- og efnaskiptaáhættu. Almennt er miðað við að hlutfall mittismáls og líkamshæðar yfir 0,5, eða mittismál yfir 102 cm hjá körlum (og 88 cm hjá konum), gefi til kynna aukna áhættu."
+  },
+  {
+   "c": "Offita",
+   "q": "Tinna sem er 35 ára kona með líkamsþyngdarstuðul 36 kg/m² kemur til læknis vegna þyngdar sinnar. Hún er annars einkennalítil. Hvaða nálgun við uppvinnslu er best?",
+   "o": [
+    "Mæla kortisól, vaxtarhormón og katekolamín",
+    "Gera skipulegt klínískt mat á fylgisjúkdómum og mögulegum orsakaþáttum og panta sérhæfðar hormónarannsóknir ef saga eða skoðun gefur tilefni til",
+    "Gera enga uppvinnslu þar sem offita er alltaf lífsstílstengd",
+    "Mæla eingöngu TSH; eðlilegt TSH útilokar aðrar orsakir og fylgikvilla"
+   ],
+   "a": [
+    1
+   ],
+   "w": "Innkirtlasjúkdómar skýra innan við 1% tilfella af offitu. Ósértæk hormónaskimun (svo sem mælingar á kortisóli eða katekolamínum) án klínískra vísbendinga er því óskynsamleg og eykur líkur á falskt jákvæðum niðurstöðum. Uppvinnsla á frekar að beinast að heildrænu skipulegu klínísku mati á lífsstíl, lyfjasögu og algengum fylgisjúkdómum (t.d. með grunnprófum fyrir sykursýki, blóðfitu og skjaldkirtilsstarfsemi). Sérhæfðar hormónamælingar ætti eingöngu að panta ef saga eða skoðun gefur skýrt tilefni til þess."
   }
  ]
 }

@@ -105,11 +105,13 @@ h1{font-weight:800}
 .tile:hover{filter:brightness(1.06)}
 .tile.alt{background:var(--card);color:var(--ink);border-color:var(--line);box-shadow:none}
 .tile.alt svg{color:var(--acc)}
-#nav{flex:none;display:flex;justify-content:space-around;gap:2px;background:var(--card);border-radius:22px 22px 0 0;box-shadow:0 -4px 18px rgba(20,33,61,.16);padding:8px 8px calc(8px + env(safe-area-inset-bottom,0px));z-index:20;position:relative}
-#nav button{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;background:none;border:0;border-radius:14px;padding:6px 2px;min-height:56px;color:var(--mute);font-size:.78rem;font-weight:600}
-#nav svg{width:26px;height:26px}
+#nav{flex:none;display:flex;justify-content:space-around;gap:2px;background:var(--card);border-radius:16px 16px 0 0;box-shadow:0 -3px 12px rgba(20,33,61,.14);padding:3px 6px calc(3px + env(safe-area-inset-bottom,0px));z-index:20;position:relative}
+body.home #nav{display:none}
+body.home{padding-bottom:env(safe-area-inset-bottom,0px)}
+#nav button{flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;background:none;border:0;border-radius:14px;padding:3px 2px;min-height:44px;color:var(--mute);font-size:.7rem;font-weight:600;line-height:1.15}
+#nav svg{width:22px;height:22px}
 #nav button.on{color:var(--acc);background:var(--sel)}
-.zpop{position:fixed;right:10px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:8px 10px;box-shadow:0 4px 18px rgba(0,0,0,.25);font-size:.9rem}
+.zpop{position:fixed;right:10px;bottom:calc(62px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;gap:8px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:8px 10px;box-shadow:0 4px 18px rgba(0,0,0,.25);font-size:.9rem}
 .zpop button{background:var(--sel);border:1px solid var(--line);border-radius:10px;min-width:44px;height:40px;font-weight:700;font-size:1.05rem;padding:0 10px}
 .prog{display:flex;justify-content:space-between;margin-bottom:8px}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0 6px}
@@ -135,17 +137,18 @@ h1{font-weight:800}
 <div id="views">
 <section class="view" id="v-home"><div class="wrap">
 <div class="hero"><img src="logo.png" alt="" width="72" height="72"><h1>Kirtlakver</h1></div>
-<p class="lead">Ein spurning í einu, endurgjöf strax og engin tímapressa. Það geta verið mörg rétt svör.</p>
+<p class="lead">Efni til stuðnings við nám í innkirtlafræðum</p>
 <div class="tiles">
 <button class="tile" data-go="spurningar"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="25"/><path d="M24 25a8 8 0 1 1 11 7.4c-2.2 1-3 2.3-3 4.6"/><circle cx="32" cy="45" r="1.2"/></svg><div><b>Spurningaleikur</b><span id="hq-count">&nbsp;</span></div></button>
 <button class="tile" data-go="tilfelli"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="10" width="36" height="46" rx="6"/><path d="M24 10V7h16v3M22 28h20M22 36h20M22 44h12"/></svg><div><b>Tilfelli</b><span id="hc-count">&nbsp;</span></div></button>
-<button class="tile alt" id="t-inst"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="18" y="6" width="28" height="52" rx="6"/><path d="M32 18v20M24 31l8 8 8-8M28 50h8"/></svg><div><b>Vista sem app</b><span>Opnast beint af heimaskjánum</span></div></button>
+<button class="tile alt" data-go="um"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="25"/><path d="M32 29v16M32 19v.5"/></svg><div><b>Upplýsingar</b><span>Um höfund og fyrirvari</span></div></button>
 </div></div></section>
 
 <section class="view" id="v-quiz" hidden>
 <section id="intro" class="wrap">
 <div class="card">
 <h1 id="title" style="margin-bottom:8px">Spurningaleikur</h1>
+<p>Ein spurning í einu, endurgjöf strax og engin tímapressa. Það geta verið mörg rétt svör.</p>
 <p>Veldu efni og fjölda spurninga.</p>
 <div id="cats"></div>
 <p style="margin-top:12px">Fjöldi spurninga: <select id="cnt"><option value="5">5</option><option value="10">10</option><option value="20">20</option><option value="0">Allar</option></select></p>
@@ -200,15 +203,16 @@ h1{font-weight:800}
 </div></section>
 
 <section class="view" id="v-about" hidden><div class="wrap"><div class="card">
-<div class="brand"><img src="logo.png" alt="" width="56" height="56"><h2 style="margin:0">Um Kirtlakver</h2></div>
+<div class="brand"><img src="logo.png" alt="" width="56" height="56"><h2 style="margin:0">Upplýsingar</h2></div>
 <p>Höfundur og eigandi þessa spurningakvers er <a href="https://hi.is/starfsfolk/rafn" target="_blank" rel="noopener">Rafn Benediktsson prófessor</a>, forstöðumaður fræðigreinarinnar innkirtlalæknisfræði við Læknadeild Háskóla Íslands. Kverið er hugsað sem stuðningur við læknanema á 4. ári læknisfræði. Ég er læknir með sérfræðiréttindi í lyflækningum, innkirtla- og efnaskiptalækningum. Ég hlaut grunnmenntun í læknisfræði við Háskóla Íslands en stundaði framhaldsnám í Edinborg í Skotlandi á árunum 1990 – 1998 þar sem ég lauk doktorsprófi 1995. Ég gegni sem stendur samhliða starfi á Landspítala sem framkvæmdastjóri bráða-, lyflækninga og endurhæfingarþjónustu Landspítalans. Hef gert það frá miðju ári 2025 en var forstöðulæknir sama sviðs í rúmt ár þar áður. Ég var áður yfirlæknir innkirtlalækninga á Landspítala 2012 – 2024. Hér eru tenglar á <a href="http://scholar.google.is/citations?user=RApsSikAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> og <a href="https://orcid.org/0000-0002-2954-9801" target="_blank" rel="noopener">ORCID</a> síðu mína.</p>
 <p><strong>Fyrirvari;</strong> Spurningar, svör og skýringar eru til stuðnings við nám læknanema og er ekki ætlað öðrum, sérstaklega ekki almenningi. Efnið er ekki klínískar leiðbeiningar enda breytast þær reglulega. Það er því ekki ábyrgt að byggja greiningu, meðferð eða lyfjaskömmtun á efni úr kverinu þar sem efnið getur innihaldið villur eða úrelt atriði. Ábyrgð á notkun efnisins er þannig notanda. Ábendingar um villur eru vel þegnar.</p>
 <p>Ábendingar: <a href="mailto:rafn@hi.is">rafn@hi.is</a></p>
+<div class="row"><button class="btn alt" id="t-inst">Vista sem app</button></div>
 </div></div></section>
 </div>
 
 <div class="zpop" id="zpop" role="group" aria-label="Stærð texta" hidden><span>Letur</span><button id="zm" aria-label="Minnka letur">−</button><button id="zp" aria-label="Stækka letur">+</button><button id="zauto" hidden>Sjálfvirkt</button></div>
-<nav id="nav" aria-label="Aðalvalmynd"><button data-nav="forsida"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg>Forsíða</button><button data-nav="spurningar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 1-1 1.7M12 17v.1"/></svg>Spurningar</button><button data-nav="tilfelli"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2h6v2M12 9v7M8.5 12.5h7"/></svg>Tilfelli</button><button data-nav="um"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.1"/></svg>Um</button><button id="znav" aria-haspopup="true" aria-label="Stærð texta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19l5-13 5 13M5 14h6M15 19l3.5-8 3.5 8M16.3 16.5h4.4"/></svg>Letur</button></nav>
+<nav id="nav" aria-label="Aðalvalmynd"><button data-nav="forsida"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10"/></svg>Forsíða</button><button data-nav="spurningar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.8.4-1 1-1 1.7M12 17v.1"/></svg>Spurningar</button><button data-nav="tilfelli"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2h6v2M12 9v7M8.5 12.5h7"/></svg>Tilfelli</button><button data-nav="um"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.1"/></svg>Upplýsingar</button><button id="znav" aria-haspopup="true" aria-label="Stærð texta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19l5-13 5 13M5 14h6M15 19l3.5-8 3.5 8M16.3 16.5h4.4"/></svg>Letur</button></nav>
 
 <!-- valmynd -->
 <div class="modal" id="mmenu" role="dialog" aria-modal="true" aria-labelledby="mmt" hidden>
@@ -492,7 +496,7 @@ function go(name){
   const v=ROUTES[name]||"home";curView=v;
   document.querySelectorAll(".view").forEach(x=>x.hidden=x.id!=="v-"+v);
   document.querySelectorAll("#nav [data-nav]").forEach(b=>{const on=ROUTES[b.dataset.nav]===v;b.classList.toggle("on",on);if(on)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});
-  $("#zpop").hidden=true;
+  $("#zpop").hidden=true;document.body.classList.toggle("home",v==="home");
   if(v==="quiz")fit();
   try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:"/"+(ROUTES[name]?name:"forsida")})}catch(e){}
 }
